@@ -1,4 +1,12 @@
+<%-- 
+    Document   : welpag2
+    Created on : 15 abr 2023, 23:42:11
+    Author     : Usuario Nuevo
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -7,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- css Navbar -->
-    <link rel="stylesheet" href="stylewel.css">
+    <link rel="stylesheet" href="stylewel2.css">
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -27,14 +35,14 @@
 <body style="background-color: #193718;">
     <!-- Inicio de Navbar -->
     <header>
-        <a href="" class="logo">Pantaleone</a>
+        <a href="index.html" class="logo">Pantaleone</a>
         <nav>
             <ul>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="../login_signin/login.html">Inciar Sesion</a></li>
+                <li><a href="#">Formulario</a></li>
+                <li><a href="index.html">Volver</a></li>
             </ul>
         </nav>
     </header>
@@ -51,7 +59,7 @@
                     </font>
                 </div>
                 <div class="txtstl2">
-                    <a href="../paginafsc/paginafsc.html">
+                    <a href="paginafsc.jsp">
                         <button type="button" class="btn btn-outline-dark">
                             <font color="#40be74">Mas sobre nosotros<span class="material-symbols-outlined ">
                                 <p class="arrow">north_east</p> 
@@ -62,7 +70,6 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 txt-right">
                 <img class="img-right" src="bgprim.jpg" alt="">
-
             </div>
 
         </div>

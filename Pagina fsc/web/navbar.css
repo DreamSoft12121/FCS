@@ -63,7 +63,7 @@ header ul li a{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(fondo2.jpg);
+    background: url(fondo3.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -74,15 +74,17 @@ header.abajo ul li a{
 }
 
 .texto-img{
-    color: #fff;
+    color: #ffffff;
     font-size: 1.5em;
     text-align: center;
     margin: 0 auto;
     position: absolute;
     top: 50%;
-    width: 600px;
+    width: 460px;
     font-family: helvetica;
 }
+
+
 
 .zona-barra{
     background: #6d8000;
@@ -169,3 +171,10 @@ header.abajo ul li a{
     color: #fff;
 
 } 
+
+/* parte imagenes card */
+
+.imgcard2{
+    background-color: #1f1d1d;
+
+}
