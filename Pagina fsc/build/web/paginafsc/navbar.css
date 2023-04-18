@@ -63,7 +63,7 @@ header ul li a{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(fondo3.jpg);
+    background: url(barcobonito.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -79,9 +79,11 @@ header.abajo ul li a{
     text-align: center;
     margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 60%;
+    left: 4%;
     width: 460px;
     font-family: helvetica;
+    background-color: #43434365;
 }
 
 
@@ -125,10 +127,11 @@ header.abajo ul li a{
 }
 
 .box-container .box {
-    height: 11rem;
-    width: 17rem;
+    height: 15rem;
+    width: 21rem;
     background: #101010;
     text-align: center;
+    align-items: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
     margin: 2rem;   
@@ -177,4 +180,21 @@ header.abajo ul li a{
 .imgcard2{
     background-color: #1f1d1d;
 
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.footer{
+    background-image:linear-gradient(to right, #434343 1%, rgb(0, 0, 0) 100%);
+    padding-bottom: 0.1px;
+}
+.contact-us{
+    width: 40%;
+    color: #fff;
 }
