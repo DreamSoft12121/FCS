@@ -373,6 +373,6 @@ async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fech
         // Fin de metodo fecha
 
 
-    pdf.save("formulario " + date +".pdf");
+    pdf.save(date + ".pdf");
 
 }
