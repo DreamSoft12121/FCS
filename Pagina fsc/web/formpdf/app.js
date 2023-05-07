@@ -48,7 +48,7 @@
 
 // async function generatePDF(curso, nombres, apellidos, email, direccion, telefono, hijos, numeroHijos, discapacidad, discapacidadDesc) {
 //     const image = await loadImage("reqtran1024_1.jpg");
-    
+
 //     const signatureImage = signaturePad.toDataURL();
 
 //     const pdf = new jsPDF('p', 'pt', 'letter');
@@ -84,14 +84,14 @@
 //         pdf.text(discapacidadDesc, 350, 720);
 //     }
 
-    
+
 //         // Inicio de metodo fecha
 
 //         const date = new Date();
 //         pdf.text((date.getUTCDate() - 1 + " / ").toString(), 380, 155);
 //         pdf.text((date.getUTCMonth() + 1 + " /").toString(), 400, 155);
 //         pdf.text((date.getUTCFullYear()).toString(), 415, 155);
-    
+
 //         // Fin de metodo fecha
 
 
@@ -112,7 +112,7 @@ function loadImage(url) {
         xhr.responseType = "blob";
         xhr.onload = function (e) {
             const reader = new FileReader();
-            reader.onload = function(event) {
+            reader.onload = function (event) {
                 const res = event.target.result;
                 resolve(res);
             }
@@ -136,14 +136,14 @@ window.addEventListener('load', async () => {
     const form = document.querySelector('#form');
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-//Hasta aca no se toca
+        //Hasta aca no se toca
 
         let rss = document.getElementById('rss').value;
         let nom = document.getElementById('nom').value;
         let tel = document.getElementById('tel').value;
         let corre = document.getElementById('corre').value;
         let fechserv = document.getElementById('fechserv').value;
-       
+
         let lugrec = document.getElementById('lugrec').value;
         let fechrec = document.getElementById('fechrec').value;
         let horarec = document.getElementById('horarec').value;
@@ -156,9 +156,9 @@ window.addEventListener('load', async () => {
         let sqm = document.querySelector('input[name="sqm"]:checked').value;
         let trc = document.getElementById('trc').value;
         let tipserv = document.getElementById('tipserv').value;
-        
-        
-        
+
+
+
         // canatidad y vokumen de carga
         //registro 1
         let tipcvc1 = document.getElementById('tipcvc-1').value;
@@ -201,7 +201,7 @@ window.addEventListener('load', async () => {
 
         generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fechrec,
             horarec, lugent, fechent, horaent, sqm, trc, tipcvc1, cantcvc1, altocvc1,
-             anchocvc1, largocvc1, tipcvc2, cantcvc2, altocvc2, anchocvc2, largocvc2,
+            anchocvc1, largocvc1, tipcvc2, cantcvc2, altocvc2, anchocvc2, largocvc2,
             tipcvc3, cantcvc3, altocvc3, anchocvc3, largocvc3,
             tipcvc4, cantcvc4, altocvc4, anchocvc4, largocvc4,
             tipcvc5, cantcvc5, altocvc5, anchocvc5, largocvc5,
@@ -212,7 +212,7 @@ window.addEventListener('load', async () => {
 
 async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fechrec,
     horarec, lugent, fechent, horaent, sqm, trc, tipcvc1, cantcvc1, altocvc1,
-     anchocvc1, largocvc1, tipcvc2, cantcvc2, altocvc2, anchocvc2, largocvc2,
+    anchocvc1, largocvc1, tipcvc2, cantcvc2, altocvc2, anchocvc2, largocvc2,
     tipcvc3, cantcvc3, altocvc3, anchocvc3, largocvc3,
     tipcvc4, cantcvc4, altocvc4, anchocvc4, largocvc4,
     tipcvc5, cantcvc5, altocvc5, anchocvc5, largocvc5,
@@ -221,7 +221,7 @@ async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fech
     // Desde aqui no se toca codigo
 
     const image = await loadImage("reqtran1024_1.jpg");
-    
+
     const signatureImage = signaturePad.toDataURL();
 
     const pdf = new jsPDF('p', 'pt', 'letter');
@@ -231,9 +231,9 @@ async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fech
 
     // Hasta aca no se toca codigo
     pdf.setFontSize(7);
-    pdf.text(lugrec, 180, 270); 
-    pdf.text(lugent, 180, 290);   
-    
+    pdf.text(lugrec, 180, 270);
+    pdf.text(lugent, 180, 290);
+
     //1.Datos de contacto
     pdf.text(rss, 165, 125);
     pdf.setFontSize(10);
@@ -241,13 +241,13 @@ async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fech
     pdf.text(tel, 165, 190);
     pdf.text(corre, 380, 190);
     //2. Correo de contacto
-    pdf.text(fechserv, 145, 245);    
+    pdf.text(fechserv, 145, 245);
     pdf.text(fechrec, 355, 270);
     pdf.text(horarec, 460, 270);
     pdf.text(fechent, 355, 290);
     pdf.text(horaent, 460, 290);
-    
-    pdf.setFontSize(12);    
+
+    pdf.setFontSize(12);
     //registro 1 
     pdf.text(tipcvc1, 130, 399);
     pdf.text(cantcvc1, 195, 399);
@@ -261,7 +261,7 @@ async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fech
     pdf.text(anchocvc2, 325, 419);
     pdf.text(largocvc2, 390, 419);
     //registro 3
-    
+
     pdf.text(tipcvc3, 130, 439);
     pdf.text(cantcvc3, 195, 439);
     pdf.text(altocvc3, 260, 439);
@@ -288,91 +288,63 @@ async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fech
 
     pdf.setFontSize(7);
     pdf.text(total, 455, 512);
-    
-    
 
-    //pdf.setFillColor(0,0,0);
-
-    // if (parseInt(hijos) === 0) {
-    //     pdf.circle(255, 374, 4, 'FD');
-    // } else {
-    //     pdf.circle(190, 374, 4, 'FD');
-    //     pdf.text(numeroHijos.toString(), 355, 378);
-    // }
-
-    // if (parseInt(discapacidad) === 0) {
-    //     pdf.circle(285, 718, 4, 'FD');
-    // } else {
-    //     pdf.circle(240, 718, 4, 'FD');
-    //     pdf.text(discapacidadDesc, 350, 720);
-    // }
-
-    // if (parseInt(trc) === 0) {
-    //     pdf.circle(285, 718, 4, 'FD');
-    // } else {
-    //     pdf.circle(240, 718, 4, 'FD');
-    // }
     //TIPO DE SERVICIO
     //LOCAL
-    if(parseInt(tipserv) === 1){
+    if (parseInt(tipserv) === 1) {
         pdf.circle(437, 230, 6, 'FD');
     }
     //FORANEO 
-    if(parseInt(tipserv) === 2){
+    if (parseInt(tipserv) === 2) {
         pdf.circle(437, 250, 6, 'FD')
     }
     //SQM
     //NO
-    if(parseInt(sqm) === 0){
+    if (parseInt(sqm) === 0) {
         pdf.circle(423, 312, 6, 'FD');
     }
     //SI 
-    if(parseInt(sqm) === 1){
+    if (parseInt(sqm) === 1) {
         pdf.circle(262, 312, 6, 'FD')
     }
     //TRC
     //SELECCIONAR OPC
-    if(parseInt(trc) === 0){
+    if (parseInt(trc) === 0) {
         pdf.circle(0, 0, 0, 'FD');
     }
     //2C A 8C
-    if(parseInt(trc) === 1){
+    if (parseInt(trc) === 1) {
         pdf.circle(155, 342, 6, 'FD');
     }
     //20C A 25C  
-    if(parseInt(trc) === 2){
+    if (parseInt(trc) === 2) {
         pdf.circle(245, 342, 6, 'FD');
-    } 
+    }
     // MENOR A 30C
-    if(parseInt(trc) === 3){
+    if (parseInt(trc) === 3) {
         pdf.circle(337, 342, 6, 'FD');
     }
     //OTRA-NINGUNA
-    if(parseInt(trc) === 4){
+    if (parseInt(trc) === 4) {
         pdf.circle(425, 342, 6, 'FD');
     }
+    // Inicio de metodo fecha
 
-    // switch (trc){
-    //     case 1:
-    //         pdf.circle(140, 310, 4, 'FD');
-    //         break;
-    //     case 2:
-    //         pdf.circle(360, 310, 4, 'FD');
-    //         break;
-    //     case 3:
-    //         pdf.circle(460, 310, 4, 'FD');
-    //         break;        
-    // }
-        // Inicio de metodo fecha
+    const date = new Date();
+    pdf.text((date.getUTCDate() - 1 + " / ").toString(), 380, 155);
+    pdf.text((date.getUTCMonth() + 1 + " /").toString(), 400, 155);
+    pdf.text((date.getUTCFullYear()).toString(), 415, 155);
 
-        const date = new Date();
-        pdf.text((date.getUTCDate() - 1 + " / ").toString(), 380, 155);
-        pdf.text((date.getUTCMonth() + 1 + " /").toString(), 400, 155);
-        pdf.text((date.getUTCFullYear()).toString(), 415, 155);
+    // Fin de metodo fecha
+
+    // declarando variables para el nombre de archivo
+    let dia = date.getDate();
+    let mes = date.getMonth();
+    let year = date.getFullYear();
+
+    pdf.save(dia + "_" + (mes + 1) + "_" + year + ".pdf");
+
     
-        // Fin de metodo fecha
-
-
-    pdf.save(date + ".pdf");
+    
 
 }
