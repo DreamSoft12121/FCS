@@ -19,6 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="navbar.css">
+    <script src="../formpdf/app.js"></script>
 </head>
 
 <body>
@@ -41,14 +42,40 @@
                     <hr>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <form id="form">
+                                <form id="form" enctype="multipart/form-data">
                                     <label for="rss" class="form-label">PDF</label>
-                                    <input type="file" class="form-control" id="rss">
-                                    <button type="submit">subir</button>
+                                    <input type="file" class="form-control" id="formu" name="formu">
+                                    <input type="hidden" class="form-control" id="formu2" name="formu2">
+                                    <input type="hidden" id="formpub1" name="formpub1">
+                                    <input type="hidden" id="formpub2" name="formpub2">
+                                    <input type="hidden" id="formpub3" name="formpub3">
+                                    <button type="submit" onclick="pdfdate()">subir</button>
                                 </form>
+                                <script>
+                                    function pdfdate(){
+                                        let fech = document.getElementById('formu').value;
+                                        const date = new Date();
+                                        let dia = date.getDate();
+                                        let mes = date.getMonth() + 1;
+                                        let year = date.getFullYear();
+                                        document.getElementById("formpub1").value = dia;
+                                        document.getElementById("formpub2").value = mes;
+                                        document.getElementById("formpub3").value = year;
+                                        
+                                        document.getElementById('formu2').value = fech;
+                                        alert(fech);
+                                    }
+                                    
+                                </script>
                             </div>
                     </div>    
                     <hr>
+                    <h2>año</h2>
+                    <hr>
+                    <h2>mes</h2>
+                    <%
+                    
+                    %>
             </div>
         </div>
     </div>

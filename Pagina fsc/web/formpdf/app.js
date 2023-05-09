@@ -115,10 +115,10 @@ function loadImage(url) {
             reader.onload = function (event) {
                 const res = event.target.result;
                 resolve(res);
-            }
+            };
             const file = this.response;
             reader.readAsDataURL(file);
-        }
+        };
         xhr.send();
     });
 }
@@ -142,6 +142,7 @@ window.addEventListener('load', async () => {
         let nom = document.getElementById('nom').value;
         let tel = document.getElementById('tel').value;
         let corre = document.getElementById('corre').value;
+        let fech = document.getElementById('fech').value;
         let fechserv = document.getElementById('fechserv').value;
 
         let lugrec = document.getElementById('lugrec').value;
@@ -156,8 +157,6 @@ window.addEventListener('load', async () => {
         let sqm = document.querySelector('input[name="sqm"]:checked').value;
         let trc = document.getElementById('trc').value;
         let tipserv = document.getElementById('tipserv').value;
-
-
 
         // canatidad y vokumen de carga
         //registro 1
@@ -199,18 +198,18 @@ window.addEventListener('load', async () => {
         //total
         let total = document.getElementById('totalcvc').value;
 
-        generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fechrec,
+        generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec, fechrec,
             horarec, lugent, fechent, horaent, sqm, trc, tipcvc1, cantcvc1, altocvc1,
             anchocvc1, largocvc1, tipcvc2, cantcvc2, altocvc2, anchocvc2, largocvc2,
             tipcvc3, cantcvc3, altocvc3, anchocvc3, largocvc3,
             tipcvc4, cantcvc4, altocvc4, anchocvc4, largocvc4,
             tipcvc5, cantcvc5, altocvc5, anchocvc5, largocvc5,
             tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, total);
-    })
+    });
 
 });
 
-async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fechrec,
+async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec, fechrec,
     horarec, lugent, fechent, horaent, sqm, trc, tipcvc1, cantcvc1, altocvc1,
     anchocvc1, largocvc1, tipcvc2, cantcvc2, altocvc2, anchocvc2, largocvc2,
     tipcvc3, cantcvc3, altocvc3, anchocvc3, largocvc3,
@@ -240,6 +239,7 @@ async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fech
     pdf.text(nom, 165, 155);
     pdf.text(tel, 165, 190);
     pdf.text(corre, 380, 190);
+    pdf.text(fech, 380, 155);
     //2. Correo de contacto
     pdf.text(fechserv, 145, 245);
     pdf.text(fechrec, 355, 270);
@@ -330,21 +330,34 @@ async function generatePDF(rss, nom, tel, corre, fechserv, tipserv, lugrec, fech
     }
     // Inicio de metodo fecha
 
-    const date = new Date();
-    pdf.text((date.getUTCDate() - 1 + " / ").toString(), 380, 155);
-    pdf.text((date.getUTCMonth() + 1 + " /").toString(), 400, 155);
-    pdf.text((date.getUTCFullYear()).toString(), 415, 155);
+    //const date = new Date();
+    //pdf.text((date.getUTCDate() - 1 + " / ").toString(), 380, 155);
+    //pdf.text((date.getUTCMonth() + 1 + " /").toString(), 400, 155);
+    //pdf.text((date.getUTCFullYear()).toString(), 415, 155);
 
     // Fin de metodo fecha
-
+    
     // declarando variables para el nombre de archivo
-    let dia = date.getDate();
-    let mes = date.getMonth();
-    let year = date.getFullYear();
+    //let dia = date.getDate();
+    //let mes = date.getMonth();
+    //let year = date.getFullYear();
 
-    pdf.save(dia + "_" + (mes + 1) + "_" + year + ".pdf");
+    pdf.save(fech + ".pdf");
 
     
     
+    function pdfdate(){
+        const date = new Date();
+        let dia = date.getDate();
+        let mes = date.getMonth() + 1;
+        let year = date.getFullYear();
+        document.getElementById("formpub1").value = dia;
+        document.getElementById("formpub2").value = mes;
+        document.getElementById("formpub3").value = year;
+        
+    }
+    pdfdate(); 
+        
+                                       
 
 }

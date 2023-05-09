@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href="../pagform/welpag2.html">Volver</a></li>
-                <li><a href="../pubform/pubform.html">Publicar Formulario</a></li>
+                <li><a href="../pubform/pubform.jsp">Publicar Formulario</a></li>
             </ul>
         </nav>
     </header>
@@ -60,10 +60,10 @@
 
 
                         <div class="row mb-3">
-                            <!-- <div class="col-md-6">
+                            <div class="col-md-6">
                             <label for="fech" class="form-label">Fecha de solicitud</label>
-                            <input type="text" class="form-control" id="fech">
-                        </div> -->
+                            <input type="text" class="form-control" id="fech" required>
+                        </div> 
 
 
                             <!-- Telefono de contacto -->
@@ -94,7 +94,7 @@
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label for="fechserv" class="form-label">Fecha del servicio</label>
-                                <input type="text" class="form-control" id="fechserv" placeholder="**/**/20**">
+                                <input type="date" class="form-control" id="fechserv">
                             </div>
                         </div>
 
