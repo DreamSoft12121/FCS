@@ -197,14 +197,16 @@ window.addEventListener('load', async () => {
         let largocvc6 = document.getElementById('largocvc-6').value;
         //total
         let total = document.getElementById('totalcvc').value;
-
+        //datos de solicitante
+        let nomfec = document.getElementById('nomfec').value;
+        
         generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec, fechrec,
             horarec, lugent, fechent, horaent, sqm, trc, tipcvc1, cantcvc1, altocvc1,
             anchocvc1, largocvc1, tipcvc2, cantcvc2, altocvc2, anchocvc2, largocvc2,
             tipcvc3, cantcvc3, altocvc3, anchocvc3, largocvc3,
             tipcvc4, cantcvc4, altocvc4, anchocvc4, largocvc4,
             tipcvc5, cantcvc5, altocvc5, anchocvc5, largocvc5,
-            tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, total);
+            tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, total,nomfec);
     });
 
 });
@@ -215,7 +217,7 @@ async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec
     tipcvc3, cantcvc3, altocvc3, anchocvc3, largocvc3,
     tipcvc4, cantcvc4, altocvc4, anchocvc4, largocvc4,
     tipcvc5, cantcvc5, altocvc5, anchocvc5, largocvc5,
-    tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, total) {
+    tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, total,nomfec) {
 
     // Desde aqui no se toca codigo
 
@@ -288,7 +290,10 @@ async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec
 
     pdf.setFontSize(7);
     pdf.text(total, 455, 512);
-
+    
+    
+    pdf.text(nomfec,325,667);
+    
     //TIPO DE SERVICIO
     //LOCAL
     if (parseInt(tipserv) === 1) {
