@@ -124,7 +124,7 @@ function loadImage(url) {
 }
 
 let signaturePad = null;
-
+const pdfButton = document.getElementById('pdf-button');
 window.addEventListener('load', async () => {
 
     const canvas = document.querySelector("canvas");
@@ -199,6 +199,23 @@ window.addEventListener('load', async () => {
         let total = document.getElementById('totalcvc').value;
         //datos de solicitante
         let nomfec = document.getElementById('nomfec').value;
+        //ayuda no se pq no salen los nuevos datos aña didos
+        let producto1 = document.getElementById('producto-1').value;
+        let producto2 = document.getElementById('producto-2').value;
+        let producto3 = document.getElementById('producto-3').value;
+        let producto4 = document.getElementById('producto-4').value;
+        let producto5 = document.getElementById('producto-5').value;
+        let producto6 = document.getElementById('producto-6').value;
+        let producto7 = document.getElementById('producto-7').value;
+        
+        let observaciones1 = document.getElementById('observaciones-1').value;
+        let observaciones2 = document.getElementById('observaciones-2').value;
+        let observaciones3 = document.getElementById('observaciones-3').value;
+        let observaciones4 = document.getElementById('observaciones-4').value;
+        let observaciones5 = document.getElementById('observaciones-5').value;
+        let observaciones6 = document.getElementById('observaciones-6').value;
+        let observaciones7 = document.getElementById('observaciones-7').value;
+        
         
         generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec, fechrec,
             horarec, lugent, fechent, horaent, sqm, trc, tipcvc1, cantcvc1, altocvc1,
@@ -206,7 +223,10 @@ window.addEventListener('load', async () => {
             tipcvc3, cantcvc3, altocvc3, anchocvc3, largocvc3,
             tipcvc4, cantcvc4, altocvc4, anchocvc4, largocvc4,
             tipcvc5, cantcvc5, altocvc5, anchocvc5, largocvc5,
-            tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, total,nomfec);
+            tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, 
+            total, nomfec, producto1, producto2, producto3, producto4, producto5,
+            producto6, producto7, observaciones1, observaciones2, observaciones3, 
+            observaciones4, observaciones5, observaciones6, observaciones7);
     });
 
 });
@@ -217,7 +237,10 @@ async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec
     tipcvc3, cantcvc3, altocvc3, anchocvc3, largocvc3,
     tipcvc4, cantcvc4, altocvc4, anchocvc4, largocvc4,
     tipcvc5, cantcvc5, altocvc5, anchocvc5, largocvc5,
-    tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, total,nomfec) {
+    tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6,
+    total,nomfec, producto1, producto2, producto3, producto4, producto5,
+    producto6, producto7, observaciones1, observaciones2, observaciones3, 
+    observaciones4, observaciones5, observaciones6, observaciones7) {
 
     // Desde aqui no se toca codigo
 
@@ -292,7 +315,25 @@ async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec
     pdf.text(total, 455, 512);
     
     
-    pdf.text(nomfec,325,667);
+    pdf.text(nomfec,325,680);
+    // nuevito 
+    
+    pdf.text(producto1,140,565);
+    pdf.text(producto2,140,580);
+    pdf.text(producto3,140,590);
+    pdf.text(producto4,140,605);
+    pdf.text(producto5,140,620);
+    pdf.text(producto6,140,635);
+    pdf.text(producto7,140,650);
+    
+    pdf.text(observaciones1,400,565);
+    pdf.text(observaciones2,400,580);
+    pdf.text(observaciones3,400,590);
+    pdf.text(observaciones4,400,605);
+    pdf.text(observaciones5,400,620);
+    pdf.text(observaciones6,400,635);
+    pdf.text(observaciones7,400,650);
+    
     
     //TIPO DE SERVICIO
     //LOCAL

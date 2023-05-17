@@ -415,7 +415,7 @@ body {
                                             
                                         </tr>
                                     </table>
-                                    <button class ="btn btn-primary mb-3" id="especificacion" onclick="Specification()"  >Agregar Especificacion</button>
+                                    <button class ="btn btn-primary mb-3" id="especificacion" onclick="Specification()" type="button" >Agregar Especificacion</button>
                                     <script>
                                         var contador = 1;
                                         function Specification(){
@@ -665,7 +665,7 @@ body {
                                         </tr>
                                         
                                     </table>
-                                    <button class ="btn btn-primary mb-4" id="add-section-btn" onclick="addSection()"  >Agregar Sección</button>
+                                    <button class ="btn btn-primary mb-4" id="add-section-btn" onclick="addSection() " type="button" >Agregar Sección</button>
                                     <script>
                                         var sectionCount = 1;
                                         function addSection(){
@@ -715,6 +715,7 @@ body {
                             </div>
 
                             <button type="submit" class="btn btn-primary mb-4" id="pdf">Generar PDF</button>
+                            
                             </div>
                             
                 </div>
