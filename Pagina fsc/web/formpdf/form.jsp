@@ -63,11 +63,28 @@
         margin-bottom: 15px;
     }
 
+   
     @media (max-width: 767px) {
         .card-form .form-group {
             flex-basis: calc(100% / 2 - 10px);
         }
         
+    }
+
+    @media (max-width: 600px) {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+        th, td {
+            font-size: 12px;
+        }
     }
 </style>
 
@@ -278,9 +295,9 @@
                                                 carga</label>
                                             <select class="form-select" id="trc">
                                                 <option value="0">Seleccione una opcion</option>
-                                                <option value="1">2°C a 8°C</option>
-                                                <option value="2">20°C a 25°C</option>
-                                                <option value="3">Menor a 30°C</option>
+                                                <option value="1">2ï¿½C a 8ï¿½C</option>
+                                                <option value="2">20ï¿½C a 25ï¿½C</option>
+                                                <option value="3">Menor a 30ï¿½C</option>
                                                 <option value="4">Otra-Ninguna</option>
                                             </select>
                                         </div>
@@ -295,7 +312,7 @@
                                 <div class="row mb-3">
                                     <!-- registro-1 -->
                                     <div class="col-md-2">
-                                        <table border="1" , width="900">
+                                        <table border="1", width="500" >
                                             <tr>
                                                 <th>
                                                     <label for="tipcvc-1" class="form-label">Tipo</label>
@@ -321,7 +338,7 @@
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuñetes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -357,7 +374,7 @@
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuñetes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -393,7 +410,7 @@
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuñetes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -429,7 +446,7 @@
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuñetes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -465,7 +482,7 @@
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuñetes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -501,7 +518,7 @@
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuñetes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -584,7 +601,7 @@
 
                                         <div class="col-md-6">
 
-                                            <table border="1" , width="900">
+                                            <table border="1" , width="500">
                                                 <tr>
                                                     <th>
                                                         <label for="producto" class="form-label">Producto por
@@ -747,7 +764,7 @@
                                     <span class="d-block pb-2">Firma digital aqui</span>
                                     <div class="signature mb-2" style="width: 100%; height: 200px;">
                                         <canvas id="signature-canvas"
-                                            style="border: 1px dashed red; width: 900px; height: 200px;"></canvas>
+                                            style="border: 1px dashed red; width: 100%; height: 200px;"></canvas>
                                     </div>
 
                                     <button type="submit" class="btn btn-primary mb-4" id="pdf">Generar PDF</button>
