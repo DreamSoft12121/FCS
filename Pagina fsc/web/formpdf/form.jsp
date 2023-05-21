@@ -146,7 +146,7 @@
 
 
                                 <div class="col-md-6">
-                                    <label for="tel" class="form-label">Telefono de contacto</label>
+                                    <label for="tel" class="form-label">Teléfono de contacto</label>
                                     <input type="text" class="form-control" id="tel">
                                 </div>
 
@@ -184,15 +184,15 @@
                                     <div>
                                         <label for="tipserv" class="form-label">Tipo de servicio</label>
                                         <select class="form-select" id="tipserv">
-                                            <option value="0">Seleccione una opcion</option>
+                                            <option value="0">Seleccione una opción</option>
                                             <option value="1">Local</option>
-                                            <option value="2">Foranea</option>
+                                            <option value="2">Foránea</option>
                                         </select>
                                     </div>
 
                                 </div>
 
-                                <h3>Recoleccion</h3>
+                                <h3>Recolección</h3>
                                 <hr>
 
 
@@ -329,11 +329,14 @@
                                                 <th>
                                                     <label for="largocvc-1" class="form-label">Largo</label>
                                                 </th>
+                                                <th>                                              
+                                                    <label for="tonelajecvc-1" class="form-label">Tonelaje</label>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-1">
-                                                        <option value="N/A">Seleccione una opcion</option>
+                                                        <option value="N/A">Seleccione una opción</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
@@ -364,12 +367,16 @@
                                                     <input type="text" class="form-control" id="largocvc-1"
                                                         placeholder="fila 1">
                                                 </td>
+                                                <td>
+                                                    <input type="text" class="form-control" id="tonelajecvc-1"
+                                                        placeholder="fila 1">
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-2" style="display:none">
-                                                        <option value="N/A">Seleccione una opcion</option>
+                                                        <option value="N/A">Seleccione una opción</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
@@ -400,12 +407,16 @@
                                                     <input type="hidden" type="text" class="form-control"
                                                         id="largocvc-2" placeholder="fila 2">
                                                 </td>
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="tonelajecvc-2" placeholder="fila 2">
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-3" style="display: none">
-                                                        <option value="N/A">Seleccione una opcion</option>
+                                                        <option value="N/A">Seleccione una opción</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
@@ -436,12 +447,16 @@
                                                     <input type="hidden" type="text" class="form-control"
                                                         id="largocvc-3" placeholder="fila 3">
                                                 </td>
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="tonelajecvc-3" placeholder="fila 3">
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-4" style="display:none">
-                                                        <option value="N/A">Seleccione una opcion</option>
+                                                        <option value="N/A">Seleccione una opción</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
@@ -472,12 +487,16 @@
                                                     <input type="hidden" type="text" class="form-control"
                                                         id="largocvc-4" placeholder="fila 4">
                                                 </td>
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="tonelajecvc-4" placeholder="fila 4">
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-5" style="display:none">
-                                                        <option value="N/A">Seleccione una opcion</option>
+                                                        <option value="N/A">Seleccione una opción</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
@@ -508,12 +527,16 @@
                                                     <input type="hidden" type="text" class="form-control"
                                                         id="largocvc-5" placeholder="fila 5">
                                                 </td>
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="tonelajecvc-5" placeholder="fila 5">
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-6" style="display:none">
-                                                        <option value="N/A">Seleccione una opcion</option>
+                                                        <option value="N/A">Seleccione una opción</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
@@ -544,11 +567,15 @@
                                                     <input type="hidden" type="text" class="form-control"
                                                         id="largocvc-6" placeholder="fila 6">
                                                 </td>
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="tonelajecvc-6" placeholder="fila 6">
+                                                </td>
                                             </tr>
 
                                         </table>
                                         <button class="btn btn-primary mb-4" id="add-section-btn"
-                                            onclick="addSection() " type="button">Agregar Secci?n</button>
+                                            onclick="addSection() " type="button">Agregar Sección</button>
                                         <script>
                                             var sectionCount = 1;
                                             function addSection() {
@@ -566,7 +593,9 @@
                                                 const ancho = document.getElementById("altocvc-" + sectionCount);
                                                 const largo = document.getElementById("anchocvc-" + sectionCount);
                                                 const cantidad = document.getElementById("largocvc-" + sectionCount);
+                                                const tonelaje = document.getElementById("tonelajecvc-" + sectionCount);
 
+                                                tonelaje.setAttribute("type","text");
                                                 alto.setAttribute("type", "text");
                                                 ancho.setAttribute("type", "text");
                                                 largo.setAttribute("type", "text");
@@ -601,7 +630,7 @@
 
                                         <div class="col-md-6">
 
-                                            <table border="1" , width="500">
+                                            <table border="1", width="500">
                                                 <tr>
                                                     <th>
                                                         <label for="producto" class="form-label">Producto por
@@ -617,13 +646,13 @@
 
 
                                                     <td>
-                                                        <input type="text" class="form-control" id="producto-1"
-                                                            placeholder="fila 1">
+                                                        <input type="text" class="form-control" 
+                                                            id="producto-1" placeholder="fila 1">
                                                     </td>
 
                                                     <td>
-                                                        <input type="text" class="form-control" id="observaciones-1"
-                                                            placeholder="fila 1">
+                                                        <input type="text" class="form-control" 
+                                                            id="observaciones-1" placeholder="fila 1">
                                                     </td>
 
 
@@ -720,7 +749,7 @@
                                                 </tr>
                                             </table>
                                             <button class="btn btn-primary mb-3" id="especificacion"
-                                                onclick="Specification()" type="button">Agregar Especificacion</button>
+                                                onclick="Specification()" type="button">Agregar Especificación</button>
                                             <script>
                                                 var contador = 1;
                                                 function Specification() {
