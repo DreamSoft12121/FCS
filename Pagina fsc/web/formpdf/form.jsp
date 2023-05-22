@@ -70,7 +70,7 @@
         <nav>
             <ul>
                 <li><a href="../pagform/welpag2.html">Volver</a></li>
-                <li><a href="../pubform/pubform.jsp">Publicar Formulario</a></li>
+                <li><a href="../pubform/upload.jsp">Publicar Formulario</a></li>
             </ul>
         </nav>
     </header>
