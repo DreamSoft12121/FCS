@@ -124,7 +124,7 @@ function loadImage(url) {
 }
 
 let signaturePad = null;
-
+const pdfButton = document.getElementById('pdf-button');
 window.addEventListener('load', async () => {
 
     const canvas = document.querySelector("canvas");
@@ -165,42 +165,36 @@ window.addEventListener('load', async () => {
         let altocvc1 = document.getElementById('altocvc-1').value;
         let anchocvc1 = document.getElementById('anchocvc-1').value;
         let largocvc1 = document.getElementById('largocvc-1').value;
-        let tonelajecvc1 = document.getElementById('tonelajecvc-1').value;
         // regstro 2 
         let tipcvc2 = document.getElementById('tipcvc-2').value;
         let cantcvc2 = document.getElementById('cantcvc-2').value;
         let altocvc2 = document.getElementById('altocvc-2').value;
         let anchocvc2 = document.getElementById('anchocvc-2').value;
         let largocvc2 = document.getElementById('largocvc-2').value;
-        let tonelajecvc2 = document.getElementById('tonelajecvc-2').value;
         // regstro 3
         let tipcvc3 = document.getElementById('tipcvc-3').value;
         let cantcvc3 = document.getElementById('cantcvc-3').value;
         let altocvc3 = document.getElementById('altocvc-3').value;
         let anchocvc3 = document.getElementById('anchocvc-3').value;
         let largocvc3 = document.getElementById('largocvc-3').value;
-        let tonelajecvc3 = document.getElementById('tonelajecvc-3').value;
         // regstro 4
         let tipcvc4 = document.getElementById('tipcvc-4').value;
         let cantcvc4 = document.getElementById('cantcvc-4').value;
         let altocvc4 = document.getElementById('altocvc-4').value;
         let anchocvc4 = document.getElementById('anchocvc-4').value;
         let largocvc4 = document.getElementById('largocvc-4').value;
-        let tonelajecvc4 = document.getElementById('tonelajecvc-4').value;
         // regstro 5
         let tipcvc5 = document.getElementById('tipcvc-5').value;
         let cantcvc5 = document.getElementById('cantcvc-5').value;
         let altocvc5 = document.getElementById('altocvc-5').value;
         let anchocvc5 = document.getElementById('anchocvc-5').value;
         let largocvc5 = document.getElementById('largocvc-5').value;
-        let tonelajecvc5 = document.getElementById('tonelajecvc-5').value;
         // regstro 6
         let tipcvc6 = document.getElementById('tipcvc-6').value;
         let cantcvc6 = document.getElementById('cantcvc-6').value;
         let altocvc6 = document.getElementById('altocvc-6').value;
         let anchocvc6 = document.getElementById('anchocvc-6').value;
         let largocvc6 = document.getElementById('largocvc-6').value;
-        let tonelajecvc6 = document.getElementById('tonelajecvc-6').value;
         //total
         let total = document.getElementById('totalcvc').value;
         //datos de solicitante
@@ -222,6 +216,7 @@ window.addEventListener('load', async () => {
         let observaciones6 = document.getElementById('observaciones-6').value;
         let observaciones7 = document.getElementById('observaciones-7').value;
         
+        
         generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec, fechrec,
             horarec, lugent, fechent, horaent, sqm, trc, tipcvc1, cantcvc1, altocvc1,
             anchocvc1, largocvc1, tipcvc2, cantcvc2, altocvc2, anchocvc2, largocvc2,
@@ -231,10 +226,8 @@ window.addEventListener('load', async () => {
             tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6, 
             total, nomfec, producto1, producto2, producto3, producto4, producto5,
             producto6, producto7, observaciones1, observaciones2, observaciones3, 
-            observaciones4, observaciones5, observaciones6, observaciones7, tonelajecvc1,
-            tonelajecvc2, tonelajecvc3, tonelajecvc4, tonelajecvc5, tonelajecvc6 );
+            observaciones4, observaciones5, observaciones6, observaciones7);
     });
-
 
 });
 
@@ -247,8 +240,7 @@ async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec
     tipcvc6, cantcvc6, altocvc6, anchocvc6, largocvc6,
     total,nomfec, producto1, producto2, producto3, producto4, producto5,
     producto6, producto7, observaciones1, observaciones2, observaciones3, 
-    observaciones4, observaciones5, observaciones6, observaciones7, tonelajecvc1,
-            tonelajecvc2, tonelajecvc3, tonelajecvc4, tonelajecvc5, tonelajecvc6) {
+    observaciones4, observaciones5, observaciones6, observaciones7) {
 
     // Desde aqui no se toca codigo
 
@@ -287,14 +279,12 @@ async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec
     pdf.text(altocvc1, 260, 399);
     pdf.text(anchocvc1, 325, 399);
     pdf.text(largocvc1, 390, 399);
-    pdf.text(tonelajecvc1, 450, 399);
     //registro 2
     pdf.text(tipcvc2, 130, 419);
     pdf.text(cantcvc2, 195, 419);
     pdf.text(altocvc2, 260, 419);
     pdf.text(anchocvc2, 325, 419);
     pdf.text(largocvc2, 390, 419);
-    pdf.text(tonelajecvc2, 450, 419);
     //registro 3
 
     pdf.text(tipcvc3, 130, 439);
@@ -302,34 +292,30 @@ async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec
     pdf.text(altocvc3, 260, 439);
     pdf.text(anchocvc3, 325, 439);
     pdf.text(largocvc3, 390, 439);
-    pdf.text(tonelajecvc3, 450, 439);
     //registro 4
     pdf.text(tipcvc4, 130, 458);
     pdf.text(cantcvc4, 195, 458);
     pdf.text(altocvc4, 260, 458);
     pdf.text(anchocvc4, 325, 458);
     pdf.text(largocvc4, 390, 458);
-    pdf.text(tonelajecvc4, 450, 458);
     //registro 5
     pdf.text(tipcvc5, 130, 477);
     pdf.text(cantcvc5, 195, 477);
     pdf.text(altocvc5, 260, 477);
     pdf.text(anchocvc5, 325, 477);
     pdf.text(largocvc5, 390, 477);
-    pdf.text(tonelajecvc5, 450, 477);
     //registro 6
     pdf.text(tipcvc6, 130, 497);
     pdf.text(cantcvc6, 195, 497);
     pdf.text(altocvc6, 260, 497);
     pdf.text(anchocvc6, 325, 497);
     pdf.text(largocvc6, 390, 497);
-    pdf.text(tonelajecvc6, 450, 497);
 
     pdf.setFontSize(7);
     pdf.text(total, 455, 512);
     
     
-    pdf.text(nomfec,325,667);
+    pdf.text(nomfec,325,680);
     // nuevito 
     
     pdf.text(producto1,140,565);
@@ -347,6 +333,8 @@ async function generatePDF(rss, nom, tel, corre, fech, fechserv, tipserv, lugrec
     pdf.text(observaciones5,400,620);
     pdf.text(observaciones6,400,635);
     pdf.text(observaciones7,400,650);
+    
+    
     //TIPO DE SERVICIO
     //LOCAL
     if (parseInt(tipserv) === 1) {

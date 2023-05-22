@@ -4,11 +4,11 @@
     Author     : gerdoc
 --%>
 
-<%@page import="org.gerdoc.helper.Helpers"%>
-<%@page import="org.gerdoc.helper.RolHelper"%>
-<%@page import="org.gerdoc.dao.Rol"%>
+<%@page import="org.dreamsoft.helper.Helpers"%>
+<%@page import="org.dreamsoft.helper.RolHelper"%>
+<%@page import="org.dreamsoft.dao.Rol"%>
 <%@page import="java.util.List"%>
-<%@page import="org.gerdoc.dao.service.RolService"%>
+<%@page import="org.dreamsoft.dao.service.RolService"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

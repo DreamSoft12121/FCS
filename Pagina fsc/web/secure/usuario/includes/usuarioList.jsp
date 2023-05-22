@@ -30,7 +30,7 @@
         <td><%=usuario.getPassword( )%></td>
         <td>
             <form method="post" action="usuarios.jsp">
-                <input type="hidden" name="usuario" id="usuario" value="<%=usuario.getCorreo( )%>" />
+                <input type="hidden" name="correo" id="correo" value="<%=usuario.getCorreo( )%>" />
                 <input type="submit" id="accion" name="accion" value="Borrar" />
                 <input type="submit" id="accion" name="accion" value="Editar" />
             </form>

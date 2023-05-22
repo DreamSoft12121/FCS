@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package org.gerdoc.dao;
+package org.dreamsoft.dao;
 
 import java.io.Serializable;
 
@@ -12,7 +12,7 @@ import java.io.Serializable;
  */
 public class Rol implements Serializable
 {
-    private String rol;
+    private String Rol;
     private String descripcion;
 
     public Rol() 
@@ -21,12 +21,12 @@ public class Rol implements Serializable
 
     public String getRol() 
     {
-        return rol;
+        return Rol;
     }
 
     public void setRol(String rol) 
     {
-        this.rol = rol;
+        this.Rol = rol;
     }
 
     public String getDescripcion() 

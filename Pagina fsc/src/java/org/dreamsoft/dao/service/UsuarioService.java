@@ -43,7 +43,7 @@ public class UsuarioService extends Conexion<Usuario>
             if (statement == null) {
                 return null;
             }
-            resultSet = statement.executeQuery("SELECT * FROM USUARIO");
+            resultSet = statement.executeQuery("SELECT * FROM Usuario");
             if (resultSet == null) 
             {
                 return null;
@@ -72,7 +72,7 @@ public class UsuarioService extends Conexion<Usuario>
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "INSERT INTO USUARIO(USUARIO,PASSWORD,NOMBRE,CORREO,ULTIMO_LOGIN) VALUES(?,?,?,?,?)";
+        String sql = "INSERT INTO Usuario(correo,nomemple,password,) VALUES(?,?,?)";
         int row = 0;
         try 
         {
@@ -104,7 +104,7 @@ public class UsuarioService extends Conexion<Usuario>
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "update USUARIO SET PASSWORD = ?,NOMBRE = ?,CORREO = ?, ULTIMO_LOGIN = ? WHERE USUARIO = ?";
+        String sql = "update Usuario SET correo = ?,nomemple = ?,password = ?, WHERE correo = ?";
         int row = 0;
         try 
         {
@@ -136,7 +136,7 @@ public class UsuarioService extends Conexion<Usuario>
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String sql = "DELETE FROM USUARIO WHERE USUARIO = ?";
+        String sql = "DELETE FROM Usuario WHERE correo = ?";
         int row = 0;
         try 
         {
@@ -175,7 +175,7 @@ public class UsuarioService extends Conexion<Usuario>
             {
                 return null;
             }
-            preparedStatement = connection.prepareStatement("SELECT * FROM USUARIO WHERE USUARIO = ?" );
+            preparedStatement = connection.prepareStatement("SELECT * FROM Usuario WHERE correo = ?" );
             if (preparedStatement == null) 
             {
                 return null;

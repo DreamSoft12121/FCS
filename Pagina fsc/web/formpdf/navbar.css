@@ -20,6 +20,17 @@ header.abajo{
     padding: 15px 20px;
 }
 
+header .logo{
+    position: relative;
+    color: #ffae2f;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+    
+}
+
 nav{
     display: flex;
     justify-content: center;
@@ -69,33 +80,30 @@ header.abajo ul li a{
     text-align: center;
 }
 
-.logo {
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #ffae2f;
-    text-decoration: none;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-@media (max-width: 600px) {
-    .logo, nav ul {
-        text-align: center;
+@media (max-width:700px){
+    header{
+        width:100px;
+        margin-left: 35%;
     }
-
-    nav li {
-        display: block;
-        margin: 10px 0;
+    header ul li a{
+        position: relative;
+        font-family: helvetica;
+        margin: 0 10px ;
+        text-decoration: none;
+        color: #ffae2f;
+        letter-spacing: 2px;
+        font-weight: 600;
+        transition: 0.7s;
+        font-size: 12px;
+    }
+    header .logo{
+        position: relative;
+        color: #ffae2f;
+        font-weight: bold;
+        padding-left: 50px;
+        letter-spacing: 0px;
+        transition: 1.5s;
+        text-decoration: none;
+        font-size: 17px;
     }
 }

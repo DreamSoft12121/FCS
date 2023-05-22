@@ -4,7 +4,7 @@
     Author     : alumno
 --%>
 
-<form id="form1" method="post" action="roles.jsp" onsubmit="return validateForm( )">
+<form id="form1" method="post" action="usuarios.jsp" onsubmit="return validateForm( )">
     <table border="1">
         <tr>
             <td>CORREO</td>
@@ -72,5 +72,5 @@
         }
         -->
     </script>
-    <a href="roles.jsp"> Lista de roles </a>
+    <a href="usuarios.jsp"> Lista de roles </a>
 </form>

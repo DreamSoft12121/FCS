@@ -1,3 +1,13 @@
+<%-- 
+    Document   : signin
+    Created on : 21 may 2023, 18:10:01
+    Author     : Usuario Nuevo
+--%>
+
+<%@page import="org.dreamsoft.helper.UsuarioHelper"%>
+<%@page import="org.dreamsoft.dao.Usuario"%>
+<%@page import="org.dreamsoft.helper.Helpers"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +28,25 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+        <%
+            String accion = request.getParameter("accion");
+            Helpers helpers = null;
+            Usuario usuario = null;
+            String aux = null;
+            boolean flag = false;
+            String readonly = null;
+            if( "Nuevo".equals( accion ) || "Editar".equals( accion ) )
+            {
+                if( "Nuevo".equals( accion ) )
+                {
+                    usuario = new Usuario( );
+                    usuario.setCorreo( "" );
+                    usuario.setNomemple( "" );
+                    usuario.setPassword( "" );
+                    aux = "Guardar";
+                    readonly = "";
+            }
+            %>
     <header>
         <a href="../index.html" class="logo">Pantaleone</a>
         <nav>
@@ -41,10 +69,16 @@
                 <h1>Crear Cuenta</h1>
 
 
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button><a href="login.html" class="btn-white">Inscribirse</a></button> 
+                <input type="email" placeholder="Email" name="correo" id="correo" value="${param.correo}" ${param.readonly} />
+                <span id="correoError" style="color:red"></span>
+                
+                <input type="text" placeholder="Nombre" name="nomemple" id="nomemple" value="${param.nomemple}" />
+                <span id="nomempleError" style="color:red"></span>
+                
+                <input type="password" placeholder="Password" name="password" id="password" value="${param.password}"/>
+                <span id="passwordError" style="color:red"></span>
+                
+                <button><input type="submit"  name="accion" id="accion" value="${param.accion}" />Inscribirse</button> 
             </form>
         </div>
         <script>
@@ -84,7 +118,20 @@
         }
         -->
         </script>
-
+        <%
+            if( "Guardar".equals( accion ) || "Borrar".equals( accion ) || "Actualizar".equals( accion ) )
+            {
+                helpers = new UsuarioHelper( ).addRequest( request );
+                if( "Guardar".equals( accion ) )
+                {
+                    flag = helpers.addT( );
+         if( flag )
+                {
+        %>
+                    <jsp:forward page="usuarios.jsp?accion=list" />
+        <%
+                }
+        %>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">

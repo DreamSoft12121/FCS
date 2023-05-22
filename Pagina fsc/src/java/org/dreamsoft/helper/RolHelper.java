@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package org.gerdoc.helper;
+package org.dreamsoft.helper;
 
 import java.io.Serializable;
 import java.util.List;
-import org.gerdoc.dao.Rol;
-import org.gerdoc.dao.service.RolService;
+import org.dreamsoft.dao.Rol;
+import org.dreamsoft.dao.service.RolService;
 
 /**
  *

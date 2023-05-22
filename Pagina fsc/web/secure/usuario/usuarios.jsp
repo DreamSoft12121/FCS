@@ -46,7 +46,7 @@
                 
             
         %>
-                <jsp:include page="/includes/usuario.jsp" >
+                <jsp:include page="includes/usuario.jsp" >
                     <jsp:param name="correo" value="<%=usuario.getCorreo()%>" />
                     <jsp:param name="usuario" value="<%=usuario.getNomemple()%>" />
                     <jsp:param name="password" value="<%=usuario.getPassword()%>" />
@@ -80,7 +80,7 @@
             if( accion == null || "list".equals(accion ))
             {
         %>
-                <a href="../usuarios.jsp?accion=Nuevo">Nuevo usuario </a>
+                <a href="usuarios.jsp?accion=Nuevo">Nuevo usuario </a>
                 <jsp:include page="includes/usuarioList.jsp" />
         <%
             }

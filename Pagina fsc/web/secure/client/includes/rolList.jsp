@@ -4,10 +4,10 @@
     Author     : alumno
 --%>
 
-<%@page import="org.gerdoc.helper.RolHelper"%>
-<%@page import="org.gerdoc.dao.Rol"%>
+<%@page import="org.dreamsoft.helper.RolHelper"%>
+<%@page import="org.dreamsoft.dao.Rol"%>
 <%@page import="java.util.List"%>
-<%@page import="org.gerdoc.dao.service.RolService"%>
+<%@page import="org.dreamsoft.dao.service.RolService"%>
 <table border="1">
     <tr>
         <td>Rol</td>
