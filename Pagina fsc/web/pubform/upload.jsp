@@ -10,25 +10,139 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
 <meta charset="UTF-8">
 <title>Subir archivo PDF</title>
 </head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+        
+    
+    }
+    body{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        
+    }
+    .drag-area{
+        border: 5px dashed #ddd;
+        height: 500px;
+        width: 700px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+       
+    }
+    .drag-area.active{
+        background-color: blue;
+        color:black;
+        border: 2px dashed #618ac9;
+        
+    }
+    
+    .drag-area h2{
+        font-size: 30px;
+        font-weight: 500;
+        color:#000;
+    }
+    .drag-area span{
+        font-size: 25px;
+        color:#000;
+        
+    }
+    .drag-area button{
+        padding: 10px 25px;
+        font-size: 20px;
+        border:0;
+        outline:none;
+        background-color: #005E78;
+        color:white;
+        border-radius: 5px;
+        cursor:pointer;
+        margin:20px;
+        
+    }
+    .file-container{
+        display:flex;
+        align-items: center;
+        gap:10px;
+        padding:10px;
+        border:solid 1px #ddd;
+        
+    }
+    #preview{
+        margin-top:10px;
+        
+    }
+    .status-text{
+        padding: 0 10px;
+        
+    }
+    .succes{
+        color: #52ad5a;
+         
+    }
+    .failure{
+        color: #ff0000;
+        
+    }
+</style>
 <body>
+    <div class="drag-area">
     <h1>Subir archivo PDF</h1>
-    <form action="upload.jsp" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".pdf" required />
+<form action="upload.jsp" method="post" enctype="multipart/form-data">
+<!--<button action="upload.jsp" method="post" enctype="multipart/form-data"> Selecciona tu archivo</button>-->
+        <input type="file" name="file" accept=".pdf" id="input-file" />
         <input type="submit" value="Subir" action="listar.jsp" />
     </form>
+    </div>
+  
 
     <%-- Procesar la subida del archivo --%>
+<!--    <script>
+     const dropArea = document.querySelector(".drop-area");
+     const dragText = dropArea.querySelector('h2');
+     const button = dropArea.querySelector("button");
+     const input= dropArea.querySelector("#input-file");
+     button.addEventListener("click", (e) {
+       input.click();
+       
+     })
+     input.addEventListener("change",(e) {
+         
+     })
+        </script>-->
     <% 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // Configuración de la ubicación para guardar los archivos subidos
         String uploadPath = "ruta/del/almacenamiento";
         
         // Configuración de la conexión a la base de datos MySQL
         String jdbcURL = "jdbc:mysql://localhost:3306/webapp";
         String dbUser = "root";
-        String dbPassword = "admin";
+        String dbPassword = "n0m3l0";
         
         // Crear una fábrica de archivos temporales
         DiskFileItemFactory factory = new DiskFileItemFactory();
