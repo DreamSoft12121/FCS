@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/Pagina fcs">
-        <Realm 
-        className="org.apache.catalina.realm.JDBCRealm" 
-        driverName="com.mysql.cj.jdbc.Driver"
-        connectionURL="jdbc:mysql://localhost/Prueba?user=root&amp;password=1234"
-        roleNameCol="ROL"
-        userCredCol="PASSWORD"
-        userNameCol="USUARIO"
-        userRoleTable="ROL_Usuario" 
-        userTable="Usuario"
-        debug="99" 
-        />
-        
+<Context path="/Pagina_fcs">
+  <Realm className="org.apache.catalina.realm.JDBCRealm" connectionURL="jdbc:mysql://localhost/Prueba?user=root&amp;password=1234" debug="99" driverName="com.mysql.cj.jdbc.Driver" roleNameCol="ROL" userCredCol="PASSWORD" userNameCol="USUARIO" userRoleTable="ROL_Usuario" userTable="Usuario"/>
 </Context>
