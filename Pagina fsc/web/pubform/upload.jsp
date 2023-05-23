@@ -17,7 +17,7 @@
     <h1>Subir archivo PDF</h1>
     <form action="upload.jsp" method="post" enctype="multipart/form-data">
         <input type="file" name="file" accept=".pdf" required />
-        <input type="submit" value="Subir" />
+        <input type="submit" value="Subir" action="listar.jsp" />
     </form>
 
     <%-- Procesar la subida del archivo --%>
