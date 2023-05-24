@@ -106,6 +106,7 @@
         <input type="submit" value="Subir" action="listar.jsp" />
     </form>
     </div>
+    
   
 
     <%-- Procesar la subida del archivo --%>
@@ -123,26 +124,13 @@
      })
         </script>-->
     <% 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         // Configuración de la ubicación para guardar los archivos subidos
-        String uploadPath = "ruta/del/almacenamiento";
+        String uploadPath = "E:/ruta";
         
         // Configuración de la conexión a la base de datos MySQL
         String jdbcURL = "jdbc:mysql://localhost:3306/webapp";
         String dbUser = "root";
-        String dbPassword = "n0m3l0";
+        String dbPassword = "admin";
         
         // Crear una fábrica de archivos temporales
         DiskFileItemFactory factory = new DiskFileItemFactory();
@@ -188,7 +176,7 @@
                     statement.close();
                     connection.close();
                     
-                    out.println("El archivo ha sido subido y guardado en la base de datos.");
+                    response.sendRedirect("listar.jsp");
                 }
             }
         } catch (Exception e) {
