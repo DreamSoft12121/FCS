@@ -25,6 +25,11 @@
     height: 50vh;
 }
 
+table{
+        animation-name: square-in-hesitate;
+    animation-duration: 2s;
+}
+
 hr{
     color: #ffae2f;
     opacity: 1;
@@ -106,6 +111,23 @@ header.abajo ul li a{
     color: #fff;
     text-align: center;
 }
+
+@keyframes square-in-hesitate {
+  0% {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  40% {
+    clip-path: inset(33% 33% 33% 33%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:square:hesitate"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
+}
+
 
 @media (max-width:700px){
     header{
