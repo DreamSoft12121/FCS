@@ -40,7 +40,7 @@
         <tr>
             <td><%= id %></td>
             <td><%= nombre %></td>
-            <td><a href="descargar.jsp?id=<%= id %>">Abrir</a></td>
+            <td><a href="descargar.jsp?id=<%= id %>">Descargar</a></td>
         </tr>
         <% 
                 }
