@@ -52,7 +52,7 @@
     }
 %>
 <header>
-        <a href="../index.html" class="logo">Pantaleone</a>
+        <a href="../index.html" class="logo">Pantaleon</a>
         <nav>
             <ul>
                 <li><a href="../paginafsc/paginafsc.html">Nosotros</a></li>
@@ -66,7 +66,7 @@
 <div class="container" id="container">
         <div class="form-container sign-in-container">
 <form action="login.jsp" method="post">
-    <h1>Iniciar sesi髇</h1>
+    <h1>Iniciar sesi贸n</h1>
                 <div class="social-container">
                     <a href="http://dreamsoft.gerdoc.com/" target="_blank" class="social"><svg
                             xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
@@ -90,12 +90,12 @@
 <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>ienvenido de nuevo!</h1>
-                    <p>Para mantenerse conectado con nosotros, inicie sesi髇 con su informaci髇 personal</p>
-                    <button class="ghost" id="signIn">Iniciar sesi髇</button>
+                    <h1>隆Bienvenido de nuevo!</h1>
+                    <p>Para mantenerse conectado con nosotros, inicie sesi贸n con su informaci贸n personal</p>
+                    <button class="ghost" id="signIn">Iniciar sesi贸n</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hola, amigo !</h1>
+                    <h1>隆Hola, amigo !</h1>
                     <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
                     <a href="signin.html"><button class="ghost" id="signUp">Inscribirse</button></a>
                 </div>

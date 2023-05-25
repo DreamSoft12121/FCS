@@ -78,7 +78,7 @@
     }
 %>
 <header>
-        <a href="../index.html" class="logo">Pantaleone</a>
+        <a href="../index.html" class="logo">Pantaleon</a>
         <nav>
             <ul>
                 <li><a href="../paginafsc/paginafsc.html">Nosotros</a></li>

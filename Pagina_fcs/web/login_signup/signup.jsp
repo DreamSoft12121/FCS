@@ -25,7 +25,7 @@
     <% } %>
     <!-- Navbar -->
     <header>
-        <a href="../index.html" class="logo">Pantaleone</a>
+        <a href="../index.html" class="logo">Pantaleon</a>
         <nav>
             <ul>
                 <li><a href="../paginafsc/paginafsc.html">Nosotros</a></li>
@@ -61,7 +61,7 @@
                     <button class="ghost" id="signIn">Iniciar sesión</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hola, amigo !</h1>
+                    <h1>¡Hola, amigo !</h1>
                     <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
                     <a href="login.jsp"><button class="ghost" id="signUp">Iniciar Sesion</button></a>
                 </div>
