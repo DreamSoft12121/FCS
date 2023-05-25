@@ -153,7 +153,7 @@
 
                                 <div class="col-md-6">
                                     <label for="fech" class="form-label">Fecha de solicitud</label>
-                                    <input type="text" class="form-control" id="fech" required>
+                                    <input type="date" class="form-control" id="fech" required>
                                 </div>
 
 
