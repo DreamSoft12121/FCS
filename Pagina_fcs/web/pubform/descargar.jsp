@@ -64,21 +64,5 @@
             out.println("Error al descargar el archivo PDF: " + e.getMessage());
         }
     %>
-    
-    <%
-                String username = (String) session.getAttribute("username");
-                String role = (String) session.getAttribute("role");
-
-                if (username != null && role != null && !role.equals("admin")) {
-            %>
-
-            
-            <%
-                } else {
-                    response.sendRedirect("../login_signup/login.jsp");
-                }
-            %>
 </body>
 </html>
-
-

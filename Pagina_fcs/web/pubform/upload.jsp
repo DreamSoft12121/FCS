@@ -1,16 +1,15 @@
-<%@page import="org.apache.tomcat.util.http.fileupload.FileItem"%>
-<%@page import="org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload"%>
-<%@page import="org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*, java.sql.*" %>
 <%@ page import="javax.servlet.*, javax.servlet.http.*" %>
+<%@ page import="org.apache.commons.fileupload.*" %>
+<%@ page import="org.apache.commons.fileupload.disk.*" %>
+<%@ page import="org.apache.commons.fileupload.servlet.*" %>
 
 <!DOCTYPE html>
 <html>
 <head>
-    
 <meta charset="UTF-8">
 <title>Subir archivo PDF</title>
 </head>
@@ -98,37 +97,22 @@
     }
 </style>
 <body>
-    <div class="drag-area">
+     <div class="drag-area">
     <h1>Subir archivo PDF</h1>
 <form action="upload.jsp" method="post" enctype="multipart/form-data">
 <!--<button action="upload.jsp" method="post" enctype="multipart/form-data"> Selecciona tu archivo</button>-->
         <input type="file" name="file" accept=".pdf" id="input-file" />
-        <input type="submit" value="Subir" action="listar.jsp" />
+        <button type="submit" value="Subir" action="listar.jsp"></button>
     </form>
     </div>
-    
-  
 
     <%-- Procesar la subida del archivo --%>
-<!--    <script>
-     const dropArea = document.querySelector(".drop-area");
-     const dragText = dropArea.querySelector('h2');
-     const button = dropArea.querySelector("button");
-     const input= dropArea.querySelector("#input-file");
-     button.addEventListener("click", (e) {
-       input.click();
-       
-     })
-     input.addEventListener("change",(e) {
-         
-     })
-        </script>-->
     <% 
         // Configuración de la ubicación para guardar los archivos subidos
         String uploadPath = "E:/ruta";
         
         // Configuración de la conexión a la base de datos MySQL
-        String jdbcURL = "jdbc:mysql://localhost:3306/webapp";
+        String jdbcURL = "jdbc:mysql://localhost:3306/login_example";
         String dbUser = "root";
         String dbPassword = "1234";
         
@@ -183,19 +167,5 @@
             out.println("Error al subir el archivo: " + e.getMessage());
         }
     %>
-    
-    <%
-                String username = (String) session.getAttribute("username");
-                String role = (String) session.getAttribute("role");
-
-                if (username != null && role != null && !role.equals("admin")) {
-            %>
-
-            
-            <%
-                } else {
-                    response.sendRedirect("../login_signup/login.jsp");
-                }
-            %>
 </body>
 </html>

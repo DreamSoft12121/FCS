@@ -17,7 +17,7 @@
         </tr>
         <% 
             // Configuración de la conexión a la base de datos MySQL
-            String jdbcURL = "jdbc:mysql://localhost:3308/login_example";
+            String jdbcURL = "jdbc:mysql://localhost:3306/login_example";
             String dbUser = "root";
             String dbPassword = "1234";
             
@@ -40,7 +40,7 @@
         <tr>
             <td><%= id %></td>
             <td><%= nombre %></td>
-            <td><a href="descargar.jsp?id=<%= id %>">Descargar</a></td>
+            <td><a href="descargar.jsp?id=<%= id %>">Abrir</a></td>
         </tr>
         <% 
                 }
@@ -55,21 +55,8 @@
             }
         %>
     </table>
-    
-    <%
-                String username = (String) session.getAttribute("username");
-                String role = (String) session.getAttribute("role");
-
-                if (username != null && role != null && !role.equals("admin")) {
-            %>
-
-            
-            <%
-                } else {
-                    response.sendRedirect("../login_signup/login.jsp");
-                }
-            %>
 </body>
 </html>
+
 
 
