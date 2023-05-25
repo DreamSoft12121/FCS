@@ -1,0 +1,10 @@
+DROP DATABASE IF exists webapp;
+CREATE DATABASE webapp;
+USE webapp;
+
+CREATE TABLE archivos_pdf (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  ruta VARCHAR(255) NOT NULL
+);
+
