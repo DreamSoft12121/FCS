@@ -131,7 +131,7 @@
 
 
                                 <div class="col-md-6">
-                                    <label for="rss" class="form-label">Razón social del solicitante</label>
+                                    <label for="rss" class="form-label">Razï¿½n social del solicitante</label>
                                     <input type="text" class="form-control" id="rss">
                                 </div>
 
@@ -153,7 +153,7 @@
 
                                 <div class="col-md-6">
                                     <label for="fech" class="form-label">Fecha de solicitud</label>
-                                    <input type="text" class="form-control" id="fech" required>
+                                    <input type="date" class="form-control" id="fech" required>
                                 </div>
 
 
@@ -161,7 +161,7 @@
 
 
                                 <div class="col-md-6">
-                                    <label for="tel" class="form-label">Teléfono de contacto</label>
+                                    <label for="tel" class="form-label">Telï¿½fono de contacto</label>
                                     <input type="text" class="form-control" id="tel">
                                 </div>
 
@@ -199,15 +199,15 @@
                                     <div>
                                         <label for="tipserv" class="form-label">Tipo de servicio</label>
                                         <select class="form-select" id="tipserv">
-                                            <option value="0">Seleccione una opción</option>
+                                            <option value="0">Seleccione una opciï¿½n</option>
                                             <option value="1">Local</option>
-                                            <option value="2">Foránea</option>
+                                            <option value="2">Forï¿½nea</option>
                                         </select>
                                     </div>
 
                                 </div>
 
-                                <h3>Recolección</h3>
+                                <h3>Recolecciï¿½n</h3>
                                 <hr>
 
 
@@ -309,10 +309,10 @@
                                             <label for="trc" class="form-label">Temperatura requerida de la
                                                 carga</label>
                                             <select class="form-select" id="trc">
-                                                <option value="0">Seleccione una opción</option>
-                                                <option value="1">2°C a 8°C</option>
-                                                <option value="2">20°C a 25°C</option>
-                                                <option value="3">Menor a 30°C</option>
+                                                <option value="0">Seleccione una opciï¿½n</option>
+                                                <option value="1">2ï¿½C a 8ï¿½C</option>
+                                                <option value="2">20ï¿½C a 25ï¿½C</option>
+                                                <option value="3">Menor a 30ï¿½C</option>
                                                 <option value="4">Otra-Ninguna</option>
                                             </select>
                                         </div>
@@ -351,12 +351,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-1">
-                                                        <option value="N/A">Seleccione una opción</option>
+                                                        <option value="N/A">Seleccione una opciï¿½n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuï¿½etes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -391,12 +391,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-2" style="display:none">
-                                                        <option value="N/A">Seleccione una opción</option>
+                                                        <option value="N/A">Seleccione una opciï¿½n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuï¿½etes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -431,12 +431,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-3" style="display: none">
-                                                        <option value="N/A">Seleccione una opción</option>
+                                                        <option value="N/A">Seleccione una opciï¿½n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuï¿½etes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -471,12 +471,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-4" style="display:none">
-                                                        <option value="N/A">Seleccione una opción</option>
+                                                        <option value="N/A">Seleccione una opciï¿½n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuï¿½etes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -511,12 +511,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-5" style="display:none">
-                                                        <option value="N/A">Seleccione una opción</option>
+                                                        <option value="N/A">Seleccione una opciï¿½n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuï¿½etes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -551,12 +551,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-6" style="display:none">
-                                                        <option value="N/A">Seleccione una opción</option>
+                                                        <option value="N/A">Seleccione una opciï¿½n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cuï¿½etes">Cuñetes</option>
+                                                        <option value="Cuï¿½etes">Cuï¿½etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -590,7 +590,7 @@
 
                                         </table>
                                         <button class="btn btn-primary mb-4" id="add-section-btn"
-                                            onclick="addSection() " type="button">Agregar Sección</button>
+                                            onclick="addSection() " type="button">Agregar Secciï¿½n</button>
                                         <script>
                                             var sectionCount = 1;
                                             function addSection() {
@@ -764,7 +764,7 @@
                                                 </tr>
                                             </table>
                                             <button class="btn btn-primary mb-3" id="especificacion"
-                                                onclick="Specification()" type="button">Agregar Especificación</button>
+                                                onclick="Specification()" type="button">Agregar Especificaciï¿½n</button>
                                             <script>
                                                 var contador = 1;
                                                 function Specification() {
