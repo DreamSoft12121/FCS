@@ -66,7 +66,7 @@
 <div class="container" id="container">
         <div class="form-container sign-in-container">
 <form action="login.jsp" method="post">
-    <h1>Iniciar sesiÃ³n</h1>
+    <h1>Iniciar sesión</h1>
                 <div class="social-container">
                     <a href="http://dreamsoft.gerdoc.com/" target="_blank" class="social"><svg
                             xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
@@ -95,7 +95,7 @@
                     <button class="ghost" id="signIn">Iniciar sesión</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>¡Hola, amigo !</h1>
+                    <h1>¡Hola, amigo!</h1>
                     
                     <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
                     

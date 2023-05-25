@@ -34,7 +34,7 @@
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
-                <li><a href="../formpdf/form.jsp">Formulario</a></li>
+                <li><a href="../pubform/listar.jsp">Lista Formularios</a></li>
                 
             <%
                 String username = (String) session.getAttribute("username");

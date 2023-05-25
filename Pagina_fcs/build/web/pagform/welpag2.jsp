@@ -62,13 +62,13 @@
                     <font color="#40be74">
                         <p class="p1">Creamos Pantaleon</p>
                         <p align="left" class="p2">Esta es una aplicación web de Pantaleone donde los trabajadores
-                            podrÃ¡n mandar sus documentos a traves de la aplicación web</p>
+                            podrán mandar sus documentos a traves de la aplicación web</p>
                     </font>
                 </div>
                 <div class="txtstl2">
                     <a href="../paginafsc/paginafsc.html">
                         <button type="button" class="btn btn-outline-dark">
-                            <font color="#40be74">MÃ¡s sobre nosotros<span class="material-symbols-outlined ">
+                            <font color="#40be74">Más sobre nosotros<span class="material-symbols-outlined ">
                                 <p class="arrow">north_east</p> 
                             </span></font>
                         </button>

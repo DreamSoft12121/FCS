@@ -178,42 +178,6 @@ header ul li a{
     </div>
     </div>
   
- <script>
-        const dragArea = document.querySelector(".drag-area");
-        const dragText = dragArea.querySelector("p");
-        const input = dragArea.querySelector("#input-file");
-        const submitButton = dragArea.querySelector("#submit-button");
-        const uploadForm = document.getElementById("upload-form");
-
-        dragArea.addEventListener("dragover", (event) => {
-            event.preventDefault();
-            dragArea.classList.add("active");
-            dragText.textContent = "Suelta el archivo aquí";
-        });
-
-        dragArea.addEventListener("dragleave", () => {
-            dragArea.classList.remove("active");
-            dragText.textContent = "Arrastra y suelta archivos aquí";
-        });
-
-        dragArea.addEventListener("drop", (event) => {
-            event.preventDefault();
-            dragArea.classList.remove("active");
-            dragText.textContent = "Arrastra y suelta archivos aquí";
-
-            const file = event.dataTransfer.files[0];
-            input.files = event.dataTransfer.files;
-            input.value = file.name; // Actualiza el valor del campo de archivo con el nombre del archivo seleccionado
-        });
-
-        submitButton.addEventListener("click", () => {
-            if (input.files.length === 0) {
-                alert("Por favor, selecciona un archivo para subir.");
-            } else {
-                uploadForm.submit();
-            }
-        });
-    </script>
     <%-- Procesar la subida del archivo --%>
 <!--    <script>
      const dropArea = document.querySelector(".drop-area");
@@ -230,25 +194,13 @@ header ul li a{
         </script>-->
     <% 
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         // Configuración de la ubicación para guardar los archivos subidos
         String uploadPath = "ruta/del/almacenamiento";
         
         // Configuración de la conexión a la base de datos MySQL
-        String jdbcURL = "jdbc:mysql://localhost:3306/webapp";
+        String jdbcURL = "jdbc:mysql://localhost:3306/login_example";
         String dbUser = "root";
-        String dbPassword = "n0m3l0";
+        String dbPassword = "1234";
         
         // Crear una fábrica de archivos temporales
         DiskFileItemFactory factory = new DiskFileItemFactory();

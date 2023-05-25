@@ -38,6 +38,8 @@
                 Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
                 
                 // Obtener los archivos PDF de la base de datos
+                //String sql = "select id, nombre, ruta, name from users,archivos_pdf where users.id_user = archivos_pdf.id_user;";
+                //String sql = "SELECT * FROM users,archivos_pdf";
                 String sql = "SELECT * FROM archivos_pdf";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 ResultSet resultSet = statement.executeQuery();
@@ -45,8 +47,10 @@
                 // Iterar sobre los resultados y mostrarlos en la tabla
                 while (resultSet.next()) {
                     int id = resultSet.getInt("id");
+                    //String name = resultSet.getString("name");
                     String nombre = resultSet.getString("nombre");
                     String ruta = resultSet.getString("ruta");
+                    //String name = resultSet.getString("name");
         %>
         <tr>
             <td><%= id %></td>
