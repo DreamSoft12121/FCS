@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Sign Up</title>
+    <title>Sign Up P</title>
 </head>
 <body>
     <%@ page import="java.sql.*" %>

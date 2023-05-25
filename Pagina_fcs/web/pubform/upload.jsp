@@ -12,7 +12,7 @@
 <head>
     
 <meta charset="UTF-8">
-<title>Subir archivo PDF</title>
+<title>Publicar</title>
 </head>
 <style>
     *{
@@ -246,11 +246,11 @@ header ul li a{
                     statement.close();
                     connection.close();
                     
-                    out.println("El archivo ha sido subido y guardado en la base de datos.");
+                    
                 }
             }
         } catch (Exception e) {
-//            out.println("Error al subir el archivo: " + e.getMessage());
+
         }
     %>
 </body>
