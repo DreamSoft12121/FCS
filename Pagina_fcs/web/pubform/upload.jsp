@@ -139,6 +139,17 @@ header ul li a{
 }
 </style>
 <body>
+            <%
+    String username = (String) session.getAttribute("username");
+    
+    if (username != null) {
+%>
+
+<%
+    } else {
+        response.sendRedirect("../login_signup/login.jsp");
+    }
+%>
     <header>
         <a href="../index.html" class="logo">Pantaleone</a>
         <nav>

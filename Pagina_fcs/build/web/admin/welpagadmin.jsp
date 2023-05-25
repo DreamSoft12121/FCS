@@ -28,7 +28,7 @@
 
     <!-- Inicio de Navbar -->
     <header>
-        <a href="../index.html" class="logo">Pantaleone</a>
+        <a href="../index.html" class="logo">Pantaleon</a>
         <nav>
             <ul>
                 <li><a href="#"></a></li>
@@ -42,10 +42,10 @@
 
                 if (username != null && role != null && role.equals("admin")) {
             %>
-                    <li><a href="#"><%= username %></a></li>
-                    <li><a href="../login_signup/logout.jsp">Logout</a></li>
+            <li><a href="../login_signup/signup.jsp">Registrar</a></li> <!-- Agregar enlace al formulario de registro --> 
+            <li><a href="../login_signup/logout.jsp">Cerrar Sesión</a></li>        
+            <li><a href="#"><%= username %></a></li>
                     
-                    <li><a href="../login_signup/signup.jsp">Registrar</a></li> <!-- Agregar enlace al formulario de registro -->
             <%
                 } else {
                     response.sendRedirect("../login_signup/login.jsp");
@@ -62,15 +62,15 @@
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 txt-left">
                 <div class="txtstl">
                     <font color="#40be74">
-                        <p class="p1">Creamos Pantaleone</p>
-                        <p align="left" class="p2">Esta es una aplicación web de Pantaleone donde los trabajadores
-                            podrán mandar sus documentos a traves de la aplicación web</p>
+                        <p class="p1">Creamos Pantaleon</p>
+                        <p align="left" class="p2">Esta es una aplicaciÃ³n web de Pantaleone donde los trabajadores
+                            podrÃ¡n mandar sus documentos a traves de la aplicaciÃ³n web</p>
                     </font>
                 </div>
                 <div class="txtstl2">
                     <a href="../paginafsc/paginafsc.html">
                         <button type="button" class="btn btn-outline-dark">
-                            <font color="#40be74">Mas sobre nosotros<span class="material-symbols-outlined ">
+                            <font color="#40be74">MÃ¡s sobre nosotros<span class="material-symbols-outlined ">
                                 <p class="arrow">north_east</p> 
                             </span></font>
                         </button>

@@ -42,10 +42,10 @@
 
                 if (username != null && role != null && role.equals("admin")) {
             %>
-                    <li><a href="#"><%= username %></a></li>
-                    <li><a href="../login_signup/logout.jsp">Logout</a></li>
+            <li><a href="../login_signup/signup.jsp">Registrar</a></li> <!-- Agregar enlace al formulario de registro --> 
+            <li><a href="../login_signup/logout.jsp">Cerrar Sesión</a></li>        
+            <li><a href="#"><%= username %></a></li>
                     
-                    <li><a href="../login_signup/signup.jsp">Registrar</a></li> <!-- Agregar enlace al formulario de registro -->
             <%
                 } else {
                     response.sendRedirect("../login_signup/login.jsp");

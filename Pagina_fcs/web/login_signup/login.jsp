@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="login_signin.js"></script>
+   
 </head>
 <body>
 <%@page import="java.sql.*"%>
@@ -90,14 +90,15 @@
 <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>Â¡Bienvenido de nuevo!</h1>
-                    <p>Para mantenerse conectado con nosotros, inicie sesiÃ³n con su informaciÃ³n personal</p>
-                    <button class="ghost" id="signIn">Iniciar sesiÃ³n</button>
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                    <button class="ghost" id="signIn">Iniciar sesión</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Â¡Hola, amigo !</h1>
-                    <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
-                    <a href="signin.html"><button class="ghost" id="signUp">Inscribirse</button></a>
+                    <h1>¡Hola, amigo !</h1>
+                    
+                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                    
                 </div>
             </div>
         </div>

@@ -100,19 +100,17 @@
         </nav>
     </header>
     
-    <%
-                String username = (String) session.getAttribute("username");
-                String role = (String) session.getAttribute("role");
+        <%
+    String username = (String) session.getAttribute("username");
+    
+    if (username != null) {
+%>
 
-                if (username != null && role != null && !role.equals("admin")) {
-            %>
-
-            
-            <%
-                } else {
-                    response.sendRedirect("../login_signup/login.jsp");
-                }
-            %>
+<%
+    } else {
+        response.sendRedirect("../login_signup/login.jsp");
+    }
+%>
 
     <div class="txtinto " style="margin-top: 5%;">
         <div class="card col-md-8">

@@ -62,7 +62,7 @@
                 </div>
                 <div class="overlay-panel overlay-right">
                     <h1>¡Hola, amigo !</h1>
-                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                    <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
                     <a href="login.jsp"><button class="ghost" id="signUp">Iniciar Sesion</button></a>
                 </div>
             </div>

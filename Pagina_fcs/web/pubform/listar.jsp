@@ -8,6 +8,17 @@
     <title>Listar archivos PDF</title>
 </head>
 <body>
+            <%
+    String username = (String) session.getAttribute("username");
+    
+    if (username != null) {
+%>
+
+<%
+    } else {
+        response.sendRedirect("../login_signup/login.jsp");
+    }
+%>
     <h1>Listar archivos PDF</h1>
     <table>
         <tr>
