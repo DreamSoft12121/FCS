@@ -1,7 +1,7 @@
-drop database if exists login_example;
-CREATE DATABASE login_example;
 
-USE login_example;
+create database Data_DS;
+
+use Data_DS;
 
 CREATE TABLE users (
   id_user INT AUTO_INCREMENT PRIMARY KEY,
@@ -20,10 +20,7 @@ CREATE TABLE archivos_pdf (
 );
 
 INSERT INTO users (username, password, name, role)
-VALUES ('user1', 'password1', 'User 1', 'user');
-
-INSERT INTO users (username, password, name, role)
-VALUES ('admin1', 'password1', 'Admin 1', 'admin');
+VALUES ('AdminBety32', 'adminpassword', 'Bety', 'admin');
 
 -- INSERT INTO archivos_pdf (id, nombre, ruta, id_user)
 -- VALUES (1, 'file1', 'E:/file1', 1);

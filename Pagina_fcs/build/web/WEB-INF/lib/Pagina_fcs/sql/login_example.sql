@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS login_example;
+drop database if exists login_example;
 CREATE DATABASE login_example;
 
 USE login_example;
@@ -16,7 +16,7 @@ CREATE TABLE archivos_pdf (
   nombre VARCHAR(255) NOT NULL,
   ruta VARCHAR(255) NOT NULL,
   id_user int,
-  foreign key (id) references users(id)
+  foreign key (id_user) references users(id_user) on update cascade on delete cascade
 );
 
 INSERT INTO users (username, password, name, role)
@@ -25,7 +25,9 @@ VALUES ('user1', 'password1', 'User 1', 'user');
 INSERT INTO users (username, password, name, role)
 VALUES ('admin1', 'password1', 'Admin 1', 'admin');
 
-INSERT INTO archivos_pdf (id, nombre, ruta, id_user)
-VALUES (1, 'file1', 'E:/file1', 1);
+-- INSERT INTO archivos_pdf (id, nombre, ruta, id_user)
+-- VALUES (1, 'file1', 'E:/file1', 1);
 
-select name.users, nombre.archivos_pdf from users archivos_pdf where id_user.users= id_user.archivos.pdf;
+-- select name.users from users where id_user.name = id_user.id;
+
+select * from users,archivos_pdf where users.id_user = archivos_pdf.id_user;

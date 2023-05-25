@@ -28,7 +28,7 @@
         </tr>
         <% 
             // Configuración de la conexión a la base de datos MySQL
-            String jdbcURL = "jdbc:mysql://localhost:3306/login_example";
+            String jdbcURL = "jdbc:mysql://localhost:3306/Data_DS";
             String dbUser = "root";
             String dbPassword = "1234";
             

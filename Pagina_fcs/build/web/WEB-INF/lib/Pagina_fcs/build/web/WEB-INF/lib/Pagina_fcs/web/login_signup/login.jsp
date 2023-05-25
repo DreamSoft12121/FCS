@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="login_signin.js"></script>
+   
 </head>
 <body>
 <%@page import="java.sql.*"%>
@@ -52,7 +52,7 @@
     }
 %>
 <header>
-        <a href="../index.html" class="logo">Pantaleone</a>
+        <a href="../index.html" class="logo">Pantaleon</a>
         <nav>
             <ul>
                 <li><a href="../paginafsc/paginafsc.html">Nosotros</a></li>
@@ -95,9 +95,10 @@
                     <button class="ghost" id="signIn">Iniciar sesión</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hola, amigo !</h1>
-                    <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
-                    <a href="signin.html"><button class="ghost" id="signUp">Inscribirse</button></a>
+                    <h1>¡Hola, amigo!</h1>
+                    
+                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                    
                 </div>
             </div>
         </div>

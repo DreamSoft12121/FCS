@@ -25,7 +25,7 @@
     <% } %>
     <!-- Navbar -->
     <header>
-        <a href="../index.html" class="logo">Pantaleone</a>
+        <a href="../index.html" class="logo">Pantaleon</a>
         <nav>
             <ul>
                 <li><a href="../paginafsc/paginafsc.html">Nosotros</a></li>
@@ -36,6 +36,20 @@
             </ul>
         </nav>
     </header>
+    
+     <%
+                String username = (String) session.getAttribute("username");
+                String role = (String) session.getAttribute("role");
+
+                if (username != null && role != null && role.equals("admin")) {
+            %>
+         
+            
+            <%
+                } else {
+                    response.sendRedirect("../login_signup/login.jsp");
+                }
+            %>
     <!-- fin de Navbar -->
     
     <div class="container" id="container">
@@ -61,9 +75,9 @@
                     <button class="ghost" id="signIn">Iniciar sesión</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hola, amigo !</h1>
-                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
-                    <a href="login.jsp"><button class="ghost" id="signUp">Iniciar Sesion</button></a>
+                    <h1>¡Hola, amigo !</h1>
+                    <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+                    
                 </div>
             </div>
         </div>

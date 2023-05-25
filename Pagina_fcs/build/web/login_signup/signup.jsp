@@ -36,6 +36,20 @@
             </ul>
         </nav>
     </header>
+    
+     <%
+                String username = (String) session.getAttribute("username");
+                String role = (String) session.getAttribute("role");
+
+                if (username != null && role != null && role.equals("admin")) {
+            %>
+         
+            
+            <%
+                } else {
+                    response.sendRedirect("../login_signup/login.jsp");
+                }
+            %>
     <!-- fin de Navbar -->
     
     <div class="container" id="container">

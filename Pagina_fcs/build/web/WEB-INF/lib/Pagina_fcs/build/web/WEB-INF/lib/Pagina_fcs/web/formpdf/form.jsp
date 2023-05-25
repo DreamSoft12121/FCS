@@ -132,7 +132,7 @@
 
                                 <div class="col-md-6">
                                     <label for="rss" class="form-label">Razón social del solicitante</label>
-                                    <input type="text" class="form-control" id="rss">
+                                    <input type="text" class="form-control" id="rss" required>
                                 </div>
 
 
@@ -141,7 +141,7 @@
 
                                 <div class="col-md-6">
                                     <label for="nom" class="form-label">Nombre solicitante</label>
-                                    <input type="text" class="form-control" id="nom">
+                                    <input type="text" class="form-control" id="nom" required>
                                 </div>
                             </div>
 
@@ -153,7 +153,7 @@
 
                                 <div class="col-md-6">
                                     <label for="fech" class="form-label">Fecha de solicitud</label>
-                                    <input type="text" class="form-control" id="fech" required>
+                                    <input type="date" class="form-control" id="fech" required>
                                 </div>
 
 
@@ -162,7 +162,7 @@
 
                                 <div class="col-md-6">
                                     <label for="tel" class="form-label">Teléfono de contacto</label>
-                                    <input type="text" class="form-control" id="tel">
+                                    <input type="text" class="form-control" id="tel" required>
                                 </div>
 
 
@@ -171,7 +171,7 @@
 
                                 <div class="col-md-6">
                                     <label for="corre" class="form-label">Correo de contacto</label>
-                                    <input type="text" class="form-control" id="corre">
+                                    <input type="mail" class="form-control" id="corre" required>
                                 </div>
                             </div>
 
@@ -364,27 +364,22 @@
                                                 </td>
 
                                                 <td>
-                                                    <input type="text" class="form-control" id="cantcvc-1"
-                                                        placeholder="fila 1">
+                                                    <input type="text" class="form-control" id="cantcvc-1">
                                                 </td>
 
                                                 <td>
-                                                    <input type="text" class="form-control" id="altocvc-1"
-                                                        placeholder="fila 1">
+                                                    <input type="text" class="form-control" id="altocvc-1">
                                                 </td>
 
                                                 <td>
-                                                    <input type="text" class="form-control" id="anchocvc-1"
-                                                        placeholder="fila 1">
+                                                    <input type="text" class="form-control" id="anchocvc-1">
                                                 </td>
 
                                                 <td>
-                                                    <input type="text" class="form-control" id="largocvc-1"
-                                                        placeholder="fila 1">
+                                                    <input type="text" class="form-control" id="largocvc-1">
                                                 </td>
                                                 <td>
-                                                    <input type="text" class="form-control" id="tonelajecvc-1"
-                                                        placeholder="fila 1">
+                                                    <input type="text" class="form-control" id="tonelajecvc-1">
                                                 </td>
                                             </tr>
 
@@ -404,27 +399,25 @@
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-2"
-                                                        placeholder="fila 2">
+                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-2">
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="altocvc-2"
-                                                        placeholder="fila 2">
-                                                </td>
-
-                                                <td>
-                                                    <input type="hidden" type="text" class="form-control"
-                                                        id="anchocvc-2" placeholder="fila 2">
+                                                    <input type="hidden" type="text" class="form-control" id="altocvc-2">
                                                 </td>
 
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="largocvc-2" placeholder="fila 2">
+                                                        id="anchocvc-2">
+                                                </td>
+
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="largocvc-2" >
                                                 </td>
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="tonelajecvc-2" placeholder="fila 2">
+                                                        id="tonelajecvc-2" >
                                                 </td>
                                             </tr>
 
@@ -444,27 +437,25 @@
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-3"
-                                                        placeholder="fila 3">
+                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-3">
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="altocvc-3"
-                                                        placeholder="fila 3">
-                                                </td>
-
-                                                <td>
-                                                    <input type="hidden" type="text" class="form-control"
-                                                        id="anchocvc-3" placeholder="fila 3">
+                                                    <input type="hidden" type="text" class="form-control" id="altocvc-3">
                                                 </td>
 
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="largocvc-3" placeholder="fila 3">
+                                                        id="anchocvc-3" >
+                                                </td>
+
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="largocvc-3" >
                                                 </td>
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="tonelajecvc-3" placeholder="fila 3">
+                                                        id="tonelajecvc-3" >
                                                 </td>
                                             </tr>
 
@@ -484,27 +475,25 @@
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-4"
-                                                        placeholder="fila 4">
+                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-4">
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="altocvc-4"
-                                                        placeholder="fila 4">
-                                                </td>
-
-                                                <td>
-                                                    <input type="hidden" type="text" class="form-control"
-                                                        id="anchocvc-4" placeholder="fila 4">
+                                                    <input type="hidden" type="text" class="form-control" id="altocvc-4">
                                                 </td>
 
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="largocvc-4" placeholder="fila 4">
+                                                        id="anchocvc-4" >
+                                                </td>
+
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="largocvc-4" >
                                                 </td>
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="tonelajecvc-4" placeholder="fila 4">
+                                                        id="tonelajecvc-4" >
                                                 </td>
                                             </tr>
 
@@ -524,27 +513,25 @@
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-5"
-                                                        placeholder="fila 5">
+                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-5">
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="altocvc-5"
-                                                        placeholder="fila 5">
-                                                </td>
-
-                                                <td>
-                                                    <input type="hidden" type="text" class="form-control"
-                                                        id="anchocvc-5" placeholder="fila 5">
+                                                    <input type="hidden" type="text" class="form-control" id="altocvc-5">
                                                 </td>
 
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="largocvc-5" placeholder="fila 5">
+                                                        id="anchocvc-5" >
+                                                </td>
+
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="largocvc-5" >
                                                 </td>
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="tonelajecvc-5" placeholder="fila 5">
+                                                        id="tonelajecvc-5" >
                                                 </td>
                                             </tr>
 
@@ -564,27 +551,25 @@
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-6"
-                                                        placeholder="fila 6">
+                                                    <input type="hidden" type="text" class="form-control" id="cantcvc-6">
                                                 </td>
 
                                                 <td>
-                                                    <input type="hidden" type="text" class="form-control" id="altocvc-6"
-                                                        placeholder="fila 6">
-                                                </td>
-
-                                                <td>
-                                                    <input type="hidden" type="text" class="form-control"
-                                                        id="anchocvc-6" placeholder="fila 6">
+                                                    <input type="hidden" type="text" class="form-control" id="altocvc-6">
                                                 </td>
 
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="largocvc-6" placeholder="fila 6">
+                                                        id="anchocvc-6" >
+                                                </td>
+
+                                                <td>
+                                                    <input type="hidden" type="text" class="form-control"
+                                                        id="largocvc-6" >
                                                 </td>
                                                 <td>
                                                     <input type="hidden" type="text" class="form-control"
-                                                        id="tonelajecvc-6" placeholder="fila 6">
+                                                        id="tonelajecvc-6" >
                                                 </td>
                                             </tr>
 

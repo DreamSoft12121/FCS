@@ -8,6 +8,17 @@
     <title>Listar archivos PDF</title>
 </head>
 <body>
+            <%
+    String username = (String) session.getAttribute("username");
+    
+    if (username != null) {
+%>
+
+<%
+    } else {
+        response.sendRedirect("../login_signup/login.jsp");
+    }
+%>
     <h1>Listar archivos PDF</h1>
     <table>
         <tr>
@@ -17,7 +28,7 @@
         </tr>
         <% 
             // Configuración de la conexión a la base de datos MySQL
-            String jdbcURL = "jdbc:mysql://localhost:3308/login_example";
+            String jdbcURL = "jdbc:mysql://localhost:3306/Data_DS";
             String dbUser = "root";
             String dbPassword = "1234";
             
@@ -27,6 +38,8 @@
                 Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
                 
                 // Obtener los archivos PDF de la base de datos
+                //String sql = "select id, nombre, ruta, name from users,archivos_pdf where users.id_user = archivos_pdf.id_user;";
+                //String sql = "SELECT * FROM users,archivos_pdf";
                 String sql = "SELECT * FROM archivos_pdf";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 ResultSet resultSet = statement.executeQuery();
@@ -34,13 +47,15 @@
                 // Iterar sobre los resultados y mostrarlos en la tabla
                 while (resultSet.next()) {
                     int id = resultSet.getInt("id");
+                    //String name = resultSet.getString("name");
                     String nombre = resultSet.getString("nombre");
                     String ruta = resultSet.getString("ruta");
+                    //String name = resultSet.getString("name");
         %>
         <tr>
             <td><%= id %></td>
             <td><%= nombre %></td>
-            <td><a href="descargar.jsp?id=<%= id %>">Descargar</a></td>
+            <td><a href="descargar.jsp?id=<%= id %>">Abrir</a></td>
         </tr>
         <% 
                 }
@@ -55,21 +70,8 @@
             }
         %>
     </table>
-    
-    <%
-                String username = (String) session.getAttribute("username");
-                String role = (String) session.getAttribute("role");
-
-                if (username != null && role != null && !role.equals("admin")) {
-            %>
-
-            
-            <%
-                } else {
-                    response.sendRedirect("../login_signup/login.jsp");
-                }
-            %>
 </body>
 </html>
+
 
 

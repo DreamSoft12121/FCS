@@ -13,7 +13,7 @@
         int id = Integer.parseInt(request.getParameter("id"));
         
         // Configuración de la conexión a la base de datos MySQL
-        String jdbcURL = "jdbc:mysql://localhost:3306/login_example";
+        String jdbcURL = "jdbc:mysql://localhost:3306/Data_DS";
         String dbUser = "root";
         String dbPassword = "1234";
         
@@ -65,20 +65,5 @@
         }
     %>
     
-    <%
-                String username = (String) session.getAttribute("username");
-                String role = (String) session.getAttribute("role");
-
-                if (username != null && role != null && !role.equals("admin")) {
-            %>
-
-            
-            <%
-                } else {
-                    response.sendRedirect("../login_signup/login.jsp");
-                }
-            %>
 </body>
 </html>
-
-
