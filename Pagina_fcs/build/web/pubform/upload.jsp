@@ -139,13 +139,35 @@ header ul li a{
 }
 </style>
 <body>
-            <%
-    String username = (String) session.getAttribute("username");
-    
-    if (username != null) {
-%>
+
 
 <%
+    
+            String jdbcURL = "jdbc:mysql://localhost:3308/Data_DS";
+        String dbUser = "root";
+        String dbPassword = "n0m3l0";
+    // Obtén el ID del usuario actualmente autenticado
+    String username = (String) session.getAttribute("username");
+    int userId = 0; // Valor predeterminado si no se encuentra el ID del usuario
+    
+    if (username != null) {
+        // Conecta con la base de datos y ejecuta una consulta para obtener el ID del usuario
+        Class.forName("com.mysql.jdbc.Driver");
+         Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
+        String getUserIdQuery = "SELECT id_user FROM users WHERE username = ?";
+        PreparedStatement getUserIdStatement = connection.prepareStatement(getUserIdQuery);
+        getUserIdStatement.setString(1, username);
+        ResultSet userIdResult = getUserIdStatement.executeQuery();
+        
+        // Verifica si se encontró el ID del usuario y asigna el valor a la variable userId
+        if (userIdResult.next()) {
+            userId = userIdResult.getInt("id_user");
+        }
+        
+        // Cierra la conexión y libera recursos
+        getUserIdStatement.close();
+        userIdResult.close();
+        connection.close();
     } else {
         response.sendRedirect("../login_signup/login.jsp");
     }
@@ -198,9 +220,7 @@ header ul li a{
         String uploadPath = "ruta/del/almacenamiento";
         
         // Configuración de la conexión a la base de datos MySQL
-        String jdbcURL = "jdbc:mysql://localhost:3306/Data_DS";
-        String dbUser = "root";
-        String dbPassword = "1234";
+
         
         // Crear una fábrica de archivos temporales
         DiskFileItemFactory factory = new DiskFileItemFactory();
@@ -212,43 +232,44 @@ header ul li a{
         ServletFileUpload upload = new ServletFileUpload(factory);
 
         try {
-            // Obtener los parámetros de la solicitud
-            List<FileItem> items = upload.parseRequest(request);
-            
-            // Iterar sobre los parámetros
-            for (FileItem item : items) {
-                // Verificar si es un campo de formulario regular o un archivo
-                if (item.isFormField()) {
-                    // Es un campo de formulario regular
-                    String fieldName = item.getFieldName();
-                    String fieldValue = item.getString("UTF-8");
+
+                // Obtén los parámetros de la solicitud
+                List<FileItem> items = upload.parseRequest(request);
+
+                // Itera sobre los parámetros
+                for (FileItem item : items) {
+                    // Verifica si es un campo de formulario regular o un archivo
+                    if (item.isFormField()) {
+                        // Es un campo de formulario regular
+                        String fieldName = item.getFieldName();
+                        String fieldValue = item.getString("UTF-8");
                     
                     // Aquí puedes procesar otros campos de formulario si es necesario
                     
                 } else {
                     // Es un archivo
-                    String fileName = new File(item.getName()).getName();
-                    String filePath = uploadPath + File.separator + fileName;
-                    
-                    // Guardar el archivo en el sistema de archivos
-                    item.write(new File(filePath));
-                    
-                    // Guardar el archivo en la base de datos
-                    Class.forName("com.mysql.jdbc.Driver");
-                    Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
-                    String sql = "INSERT INTO archivos_pdf (nombre, ruta) VALUES (?, ?)";
-                    PreparedStatement statement = connection.prepareStatement(sql);
-                    statement.setString(1, fileName);
-                    statement.setString(2, filePath);
-                    statement.executeUpdate();
-                    
-                    // Cerrar la conexión y liberar recursos
-                    statement.close();
-                    connection.close();
-                    
-                    
-                }
-            }
+                String fileName = new File(item.getName()).getName();
+                          String filePath = uploadPath + File.separator + fileName;
+
+                          // Guardar el archivo en el sistema de archivos
+                          item.write(new File(filePath));
+
+                          // Guardar el archivo en la base de datos, incluyendo el ID del usuario
+                          Class.forName("com.mysql.jdbc.Driver");
+                   Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
+                          String sql = "INSERT INTO archivos_pdf (nombre, ruta, id_user) VALUES (?, ?, ?)";
+                          PreparedStatement statement = connection.prepareStatement(sql);
+                          statement.setString(1, fileName);
+                          statement.setString(2, filePath);
+                          statement.setInt(3, userId); // Establece el ID del usuario en la inserción
+                          statement.executeUpdate();
+
+                          // Cerrar la conexión y liberar recursos
+                          statement.close();
+                          connection.close();
+        }
+    }
+
         } catch (Exception e) {
 
         }

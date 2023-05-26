@@ -13,9 +13,9 @@
         int id = Integer.parseInt(request.getParameter("id"));
         
         // Configuración de la conexión a la base de datos MySQL
-        String jdbcURL = "jdbc:mysql://localhost:3306/Data_DS";
+        String jdbcURL = "jdbc:mysql://localhost:3308/Data_DS";
         String dbUser = "root";
-        String dbPassword = "1234";
+        String dbPassword = "n0m3l0";
         
         try {
             // Establecer la conexión a la base de datos

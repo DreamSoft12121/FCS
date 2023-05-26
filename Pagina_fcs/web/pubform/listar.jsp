@@ -175,16 +175,16 @@
     <table>
         <thead>
         <tr>
-            <th class="sticky-column">ID</th>
+            <th class="sticky-column">Username</th>
             <th class="sticky-column">Nombre</th>
             <th class="sticky-column">Acciones</th>
         </tr>
     </thead>
         <% 
             // Configuraci�n de la conexi�n a la base de datos MySQL
-            String jdbcURL = "jdbc:mysql://localhost:3306/Data_DS";
+            String jdbcURL = "jdbc:mysql://localhost:3308/Data_DS";
             String dbUser = "root";
-            String dbPassword = "1234";
+            String dbPassword = "n0m3l0";
             
             try {
                 // Establecer la conexi�n a la base de datos
@@ -194,20 +194,19 @@
                 // Obtener los archivos PDF de la base de datos
                 //String sql = "select id, nombre, ruta, name from users,archivos_pdf where users.id_user = archivos_pdf.id_user;";
                 //String sql = "SELECT * FROM users,archivos_pdf";
-                String sql = "SELECT * FROM archivos_pdf";
-                PreparedStatement statement = connection.prepareStatement(sql);
-                ResultSet resultSet = statement.executeQuery();
-                
-                // Iterar sobre los resultados y mostrarlos en la tabla
-                while (resultSet.next()) {
-                    int id = resultSet.getInt("id");
-                    //String name = resultSet.getString("name");
-                    String nombre = resultSet.getString("nombre");
-                    String ruta = resultSet.getString("ruta");
-                    //String name = resultSet.getString("name");
-        %>
+                    String sql = "SELECT archivos_pdf.id, archivos_pdf.nombre, archivos_pdf.ruta, users.username FROM archivos_pdf INNER JOIN users ON archivos_pdf.id_user = users.id_user";
+                    PreparedStatement statement = connection.prepareStatement(sql);
+                    ResultSet resultSet = statement.executeQuery();
+                    
+                    // Iterar sobre los resultados y mostrarlos en la tabla
+                    while (resultSet.next()) {
+                        int id = resultSet.getInt("id");
+                        String nombre = resultSet.getString("nombre");
+                        String ruta = resultSet.getString("ruta");
+                        String username1 = resultSet.getString("username");
+                %>
         <tr>
-            <td><%= id %></td>
+            <td><%= username1%></td>
             <td><%= nombre %></td>
             <td><a href="descargar.jsp?id=<%= id %>">Abrir</a></td>
         </tr>

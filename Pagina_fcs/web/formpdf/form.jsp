@@ -94,7 +94,7 @@
         <a href="../index.html" class="logo">Pantaleone</a>
         <nav>
             <ul>
-                <li><a href="../pagform/welpag2.html">Volver</a></li>
+                <li><a href="../pagform/welpag2.jsp">Volver</a></li>
                 <li><a href="../pubform/upload.jsp">Publicar Formulario</a></li>
             </ul>
         </nav>
