@@ -131,7 +131,7 @@
 
 
                                 <div class="col-md-6">
-                                    <label for="rss" class="form-label">Raz�n social del solicitante</label>
+                                    <label for="rss" class="form-label">Raz&oacute;n social del solicitante</label>
                                     <input type="text" class="form-control" id="rss" required>
                                 </div>
 
@@ -161,7 +161,7 @@
 
 
                                 <div class="col-md-6">
-                                    <label for="tel" class="form-label">Tel�fono de contacto</label>
+                                    <label for="tel" class="form-label">Tel&eacute;fono de contacto</label>
                                     <input type="text" class="form-control" id="tel" required>
                                 </div>
 
@@ -199,15 +199,15 @@
                                     <div>
                                         <label for="tipserv" class="form-label">Tipo de servicio</label>
                                         <select class="form-select" id="tipserv">
-                                            <option value="0">Seleccione una opci�n</option>
+                                            <option value="0">Seleccione una opci&oacute;n</option>
                                             <option value="1">Local</option>
-                                            <option value="2">For�nea</option>
+                                            <option value="2">For&aacute;nea</option>
                                         </select>
                                     </div>
 
                                 </div>
 
-                                <h3>Recolecci�n</h3>
+                                <h3>Recolecc&oacute;n</h3>
                                 <hr>
 
 
@@ -309,10 +309,10 @@
                                             <label for="trc" class="form-label">Temperatura requerida de la
                                                 carga</label>
                                             <select class="form-select" id="trc">
-                                                <option value="0">Seleccione una opci�n</option>
-                                                <option value="1">2�C a 8�C</option>
-                                                <option value="2">20�C a 25�C</option>
-                                                <option value="3">Menor a 30�C</option>
+                                                <option value="0">Seleccione una opci&oacute;n</option>
+                                                <option value="1">2&DiacriticalDot; C a 8&DiacriticalDotC</option>
+                                                <option value="2">20&DiacriticalDotC a 25&DiacriticalDotC</option>
+                                                <option value="3">Menor a 30&DiacriticalDotC</option>
                                                 <option value="4">Otra-Ninguna</option>
                                             </select>
                                         </div>
@@ -351,12 +351,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-1">
-                                                        <option value="N/A">Seleccione una opci�n</option>
+                                                        <option value="N/A">Seleccione una opci&oacute;n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cu�etes">Cu�etes</option>
+                                                        <option value="Cu&ntilde;etes">Cu&ntilde;etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -386,12 +386,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-2" style="display:none">
-                                                        <option value="N/A">Seleccione una opci�n</option>
+                                                        <option value="N/A">Seleccione una opci&oacute;n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cu�etes">Cu�etes</option>
+                                                        <option value="Cu&ntilde;etes">Cu&ntilde;etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -424,12 +424,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-3" style="display: none">
-                                                        <option value="N/A">Seleccione una opci�n</option>
+                                                        <option value="N/A">Seleccione una opci&oacute;n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cu�etes">Cu�etes</option>
+                                                        <option value="Cu&ntilde;etes">Cu&ntilde;etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -462,12 +462,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-4" style="display:none">
-                                                        <option value="N/A">Seleccione una opci�n</option>
+                                                        <option value="N/A">Seleccione una opci&oacute;n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cu�etes">Cu�etes</option>
+                                                        <option value="Cu&ntilde;etes">Cu&ntilde;etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -500,12 +500,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-5" style="display:none">
-                                                        <option value="N/A">Seleccione una opci�n</option>
+                                                        <option value="N/A">Seleccione una opci&oacute;n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cu�etes">Cu�etes</option>
+                                                        <option value="Cu&ntilde;etes">Cu&ntilde;etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -538,12 +538,12 @@
                                             <tr>
                                                 <td>
                                                     <select class="form-select" id="tipcvc-6" style="display:none">
-                                                        <option value="N/A">Seleccione una opci�n</option>
+                                                        <option value="N/A">Seleccione una opci&oacute;n</option>
                                                         <option value="Tarimas">Tarimas</option>
                                                         <option value="Tubos">Tubos</option>
                                                         <option value="Bultos">Bultos</option>
                                                         <option value="Bidones">Bidones</option>
-                                                        <option value="Cu�etes">Cu�etes</option>
+                                                        <option value="Cu&ntilde;etes">Cu&ntilde;etes</option>
                                                         <option value="Hielera">Hielera</option>
                                                         <option value="Corrugado">Corrugado</option>
                                                         <option value="Piezas">Piezas</option>
@@ -575,7 +575,7 @@
 
                                         </table>
                                         <button class="btn btn-primary mb-4" id="add-section-btn"
-                                            onclick="addSection() " type="button">Agregar Secci�n</button>
+                                            onclick="addSection() " type="button">Agregar Secci&oacute;n</button>
                                         <script>
                                             var sectionCount = 1;
                                             function addSection() {
@@ -652,7 +652,7 @@
 
                                                     <td>
                                                         <input type="text" class="form-control" 
-                                                            id="observaciones-1" placeholder="fila 1">
+                                                            id="observaciones-1">
                                                     </td>
 
 
@@ -662,27 +662,12 @@
 
                                                     <td>
                                                         <input type="hidden" type="text" class="form-control"
-                                                            id="producto-2" placeholder="fila 2">
+                                                            id="producto-2" >
                                                     </td>
 
                                                     <td>
                                                         <input type="hidden" type="text" class="form-control"
-                                                            id="observaciones-2" placeholder="fila 2">
-                                                    </td>
-
-
-                                                </tr>
-                                                <tr>
-
-
-                                                    <td>
-                                                        <input type="hidden" type="text" class="form-control"
-                                                            id="producto-3" placeholder="fila 3">
-                                                    </td>
-
-                                                    <td>
-                                                        <input type="hidden" type="text" class="form-control"
-                                                            id="observaciones-3" placeholder="fila 3">
+                                                            id="observaciones-2" >
                                                     </td>
 
 
@@ -692,27 +677,12 @@
 
                                                     <td>
                                                         <input type="hidden" type="text" class="form-control"
-                                                            id="producto-4" placeholder="fila 4">
+                                                            id="producto-3" >
                                                     </td>
 
                                                     <td>
                                                         <input type="hidden" type="text" class="form-control"
-                                                            id="observaciones-4" placeholder="fila 4">
-                                                    </td>
-
-
-                                                </tr>
-                                                <tr>
-
-
-                                                    <td>
-                                                        <input type="hidden" type="text" class="form-control"
-                                                            id="producto-5" placeholder="fila 5">
-                                                    </td>
-
-                                                    <td>
-                                                        <input type="hidden" type="text" class="form-control"
-                                                            id="observaciones-5" placeholder="fila 5">
+                                                            id="observaciones-3" >
                                                     </td>
 
 
@@ -722,12 +692,12 @@
 
                                                     <td>
                                                         <input type="hidden" type="text" class="form-control"
-                                                            id="producto-6" placeholder="fila 6">
+                                                            id="producto-4" >
                                                     </td>
 
                                                     <td>
                                                         <input type="hidden" type="text" class="form-control"
-                                                            id="observaciones-6" placeholder="fila 6">
+                                                            id="observaciones-4" >
                                                     </td>
 
 
@@ -737,19 +707,49 @@
 
                                                     <td>
                                                         <input type="hidden" type="text" class="form-control"
-                                                            id="producto-7" placeholder="fila 7">
+                                                            id="producto-5" >
                                                     </td>
 
                                                     <td>
                                                         <input type="hidden" type="text" class="form-control"
-                                                            id="observaciones-7" placeholder="fila 7">
+                                                            id="observaciones-5" >
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+
+
+                                                    <td>
+                                                        <input type="hidden" type="text" class="form-control"
+                                                            id="producto-6" >
+                                                    </td>
+
+                                                    <td>
+                                                        <input type="hidden" type="text" class="form-control"
+                                                            id="observaciones-6" >
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+
+
+                                                    <td>
+                                                        <input type="hidden" type="text" class="form-control"
+                                                            id="producto-7" >
+                                                    </td>
+
+                                                    <td>
+                                                        <input type="hidden" type="text" class="form-control"
+                                                            id="observaciones-7" >
                                                     </td>
 
 
                                                 </tr>
                                             </table>
                                             <button class="btn btn-primary mb-3" id="especificacion"
-                                                onclick="Specification()" type="button">Agregar Especificaci�n</button>
+                                                onclick="Specification()" type="button">Agregar Especificaci&oacute;n</button>
                                             <script>
                                                 var contador = 1;
                                                 function Specification() {

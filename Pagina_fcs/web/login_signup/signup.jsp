@@ -70,12 +70,12 @@
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>¡Bienvenido de nuevo!</h1>
-                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
-                    <button class="ghost" id="signIn">Iniciar sesión</button>
+                    <h1>Bienvenido de nuevo!</h1>
+                    <p>Para mantenerse conectado con nosotros, inicie sesión con su informaci&oacute;n personal</p>
+                    <button class="ghost" id="signIn">Iniciar sesi&oacute;n</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>¡Hola, amigo !</h1>
+                    <h1>Hola, amigo !</h1>
                     <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
                     
                 </div>

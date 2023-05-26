@@ -41,7 +41,7 @@
 
                 if (username != null && role != null && !role.equals("admin")) {
             %>
-            <li><a href="../login_signup/logout.jsp">Cerrar Sesi�n</a></li>        
+            <li><a href="../login_signup/logout.jsp">Cerrar Sesi&oacute;n</a></li>        
             <li><a href="#"><%= username %></a></li>
                     
             <%
@@ -61,14 +61,14 @@
                 <div class="txtstl">
                     <font color="#40be74">
                         <p class="p1">Creamos Pantaleon</p>
-                        <p align="left" class="p2">Esta es una aplicaci�n web de Pantaleone donde los trabajadores
-                            podr�n mandar sus documentos a traves de la aplicaci�n web</p>
+                        <p align="left" class="p2">Esta es una aplicaci&oacute;n web de Pantaleon donde los trabajadores
+                            podr&aacute;n mandar sus documentos a traves de la aplicaci&oacute;n web</p>
                     </font>
                 </div>
                 <div class="txtstl2">
                     <a href="../paginafsc/paginafsc.html">
                         <button type="button" class="btn btn-outline-dark">
-                            <font color="#40be74">M�s sobre nosotros<span class="material-symbols-outlined ">
+                            <font color="#40be74">M&aacute;s sobre nosotros<span class="material-symbols-outlined ">
                                 <p class="arrow">north_east</p> 
                             </span></font>
                         </button>
