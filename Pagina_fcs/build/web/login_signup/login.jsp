@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Login Page</title>
+    <title>Log in </title>
 <link rel="stylesheet" href="style1.css">
 <link rel="stylesheet" href="navbar.css">
 <!-- CSS -->
@@ -66,7 +66,7 @@
 <div class="container" id="container">
         <div class="form-container sign-in-container">
 <form action="login.jsp" method="post">
-    <h1>Iniciar sesión</h1>
+    <h1>Iniciar sesiï¿½n</h1>
                 <div class="social-container">
                     <a href="http://dreamsoft.gerdoc.com/" target="_blank" class="social"><svg
                             xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
@@ -90,14 +90,14 @@
 <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>¡Bienvenido de nuevo!</h1>
-                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
-                    <button class="ghost" id="signIn">Iniciar sesión</button>
+                    <h1>ï¿½Bienvenido de nuevo!</h1>
+                    <p>Para mantenerse conectado con nosotros, inicie sesiï¿½n con su informaciï¿½n personal</p>
+                    <button class="ghost" id="signIn">Iniciar sesiï¿½n</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>¡Hola, amigo!</h1>
+                    <h1>ï¿½Hola, amigo!</h1>
                     
-                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                    <p>Para mantenerse conectado con nosotros, inicie sesiï¿½n con su informaciï¿½n personal</p>
                     
                 </div>
             </div>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Principal</title>
     <!-- css Navbar -->
     <link rel="stylesheet" href="stylewel.css">
     <!-- CSS -->
@@ -41,7 +41,7 @@
 
                 if (username != null && role != null && !role.equals("admin")) {
             %>
-            <li><a href="../login_signup/logout.jsp">Cerrar Sesión</a></li>        
+            <li><a href="../login_signup/logout.jsp">Cerrar Sesiï¿½n</a></li>        
             <li><a href="#"><%= username %></a></li>
                     
             <%
@@ -61,14 +61,14 @@
                 <div class="txtstl">
                     <font color="#40be74">
                         <p class="p1">Creamos Pantaleon</p>
-                        <p align="left" class="p2">Esta es una aplicación web de Pantaleone donde los trabajadores
-                            podrán mandar sus documentos a traves de la aplicación web</p>
+                        <p align="left" class="p2">Esta es una aplicaciï¿½n web de Pantaleone donde los trabajadores
+                            podrï¿½n mandar sus documentos a traves de la aplicaciï¿½n web</p>
                     </font>
                 </div>
                 <div class="txtstl2">
                     <a href="../paginafsc/paginafsc.html">
                         <button type="button" class="btn btn-outline-dark">
-                            <font color="#40be74">Más sobre nosotros<span class="material-symbols-outlined ">
+                            <font color="#40be74">Mï¿½s sobre nosotros<span class="material-symbols-outlined ">
                                 <p class="arrow">north_east</p> 
                             </span></font>
                         </button>
