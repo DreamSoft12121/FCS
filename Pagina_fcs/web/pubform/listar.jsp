@@ -175,6 +175,7 @@
     <table>
         <thead>
         <tr>
+            <th class="sticky-column">ID</th>
             <th class="sticky-column">Username</th>
             <th class="sticky-column">Nombre</th>
             <th class="sticky-column">Acciones</th>
@@ -206,6 +207,7 @@
                         String username1 = resultSet.getString("username");
                 %>
         <tr>
+            <td><%= id%></td>
             <td><%= username1%></td>
             <td><%= nombre %></td>
             <td><a href="descargar.jsp?id=<%= id %>">Abrir</a></td>
