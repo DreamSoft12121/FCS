@@ -183,9 +183,9 @@
     </thead>
         <% 
             // Configuraci�n de la conexi�n a la base de datos MySQL
-            String jdbcURL = "jdbc:mysql://localhost:3308/Data_DS";
+            String jdbcURL = "jdbc:mysql://localhost:3306/data_ds";
             String dbUser = "root";
-            String dbPassword = "n0m3l0";
+            String dbPassword = "1234";
             
             try {
                 // Establecer la conexi�n a la base de datos
@@ -195,7 +195,7 @@
                 // Obtener los archivos PDF de la base de datos
                 //String sql = "select id, nombre, ruta, name from users,archivos_pdf where users.id_user = archivos_pdf.id_user;";
                 //String sql = "SELECT * FROM users,archivos_pdf";
-                    String sql = "SELECT archivos_pdf.id, archivos_pdf.nombre, archivos_pdf.ruta, users.username FROM archivos_pdf INNER JOIN users ON archivos_pdf.id_user = users.id_user";
+                    String sql = "select archivos_pdf.id, archivos_pdf.nombre, archivos_pdf.ruta, users.username from archivos_pdf inner join users on archivos_pdf.id_user = users.id_user";
                     PreparedStatement statement = connection.prepareStatement(sql);
                     ResultSet resultSet = statement.executeQuery();
                     

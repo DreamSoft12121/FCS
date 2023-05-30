@@ -143,9 +143,9 @@ header ul li a{
 
 <%
     
-            String jdbcURL = "jdbc:mysql://localhost:3308/Data_DS";
+        String jdbcURL = "jdbc:mysql://localhost:3306/data_ds";
         String dbUser = "root";
-        String dbPassword = "n0m3l0";
+        String dbPassword = "1234";
     // Obtén el ID del usuario actualmente autenticado
     String username = (String) session.getAttribute("username");
     int userId = 0; // Valor predeterminado si no se encuentra el ID del usuario
@@ -154,7 +154,7 @@ header ul li a{
         // Conecta con la base de datos y ejecuta una consulta para obtener el ID del usuario
         Class.forName("com.mysql.jdbc.Driver");
          Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
-        String getUserIdQuery = "SELECT id_user FROM users WHERE username = ?";
+        String getUserIdQuery = "select id_user from users where username = ?";
         PreparedStatement getUserIdStatement = connection.prepareStatement(getUserIdQuery);
         getUserIdStatement.setString(1, username);
         ResultSet userIdResult = getUserIdStatement.executeQuery();
@@ -257,7 +257,7 @@ header ul li a{
                           // Guardar el archivo en la base de datos, incluyendo el ID del usuario
                           Class.forName("com.mysql.jdbc.Driver");
                    Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
-                          String sql = "INSERT INTO archivos_pdf (nombre, ruta, id_user) VALUES (?, ?, ?)";
+                          String sql = "insert into archivos_pdf (nombre, ruta, id_user) values (?, ?, ?)";
                           PreparedStatement statement = connection.prepareStatement(sql);
                           statement.setString(1, fileName);
                           statement.setString(2, filePath);

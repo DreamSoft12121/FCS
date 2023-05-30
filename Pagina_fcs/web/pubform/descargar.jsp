@@ -13,9 +13,9 @@
         int id = Integer.parseInt(request.getParameter("id"));
         
         // Configuración de la conexión a la base de datos MySQL
-        String jdbcURL = "jdbc:mysql://localhost:3308/Data_DS";
+        String jdbcURL = "jdbc:mysql://localhost:3306/data_ds";
         String dbUser = "root";
-        String dbPassword = "n0m3l0";
+        String dbPassword = "1234";
         
         try {
             // Establecer la conexión a la base de datos
@@ -23,7 +23,7 @@
             Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
             
             // Obtener la ruta del archivo PDF de la base de datos
-            String sql = "SELECT ruta FROM archivos_pdf WHERE id = ?";
+            String sql = "select ruta from archivos_pdf where id = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
