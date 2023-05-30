@@ -22,9 +22,3 @@ create table archivos_pdf (
 insert into users (username, password, name, role)
 values ('AdminBety32', 'adminpassword', 'Bety', 'admin');
 
--- INSERT INTO archivos_pdf (id, nombre, ruta, id_user)
--- VALUES (1, 'file1', 'E:/file1', 1);
-
--- select name.users from users where id_user.name = id_user.id;
-
-select * from users,archivos_pdf where users.id_user = archivos_pdf.id_user;
